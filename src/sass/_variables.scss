@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+//fonts
+@mixin f-roboto-mono {
+    font-family: "Roboto Mono";
+    font-weight: 400;
+}
+
+@mixin f-roboto-mono-medium {
+    font-family: "Roboto Mono";
+    font-weight: 500;
+}
+
+@mixin f-homemade-apple {
+    font-family: "Homemade Apple";
+}
+
+//colors
+$c-cream: #FFF9E3;
+$c-coffee: #E47525;
+$c-mint-tea: #63DACC;
+$c-chalkboard: #262626;
+
+//Mixins
+//Autoprefixer
+@mixin autoprefix($prop, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+        #{"-" + $prefix + "-" + $prop}: $value;
+    }
+    #{$prop}: $value;
+}
