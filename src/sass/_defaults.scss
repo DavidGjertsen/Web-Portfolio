@@ -7,11 +7,13 @@
 html {
     @include vars.roboto-mono-medium;
     color: vars.$chalkboard;
-
+    height: 100vh;
+    overflow: hidden;
 }
 
 p {
     line-height: 1.3125;
+    margin-bottom: .75rem;
 }
 
 h1, h2, h3, h4, h5, h6 {

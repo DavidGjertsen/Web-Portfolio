@@ -29,3 +29,22 @@ $chalkboard: #262626;
     }
     #{$prop}: $value;
 }
+
+//Animations
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+}

@@ -53,6 +53,21 @@ table {
   border-spacing: 0;
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -61,10 +76,13 @@ html {
   font-family: "Roboto Mono";
   font-weight: 500;
   color: #262626;
+  height: 100vh;
+  overflow: hidden;
 }
 
 p {
   line-height: 1.3125;
+  margin-bottom: 0.75rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -110,10 +128,16 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
-.container .panel .paneContent {
+.container .panel .panelContent {
+  width: 88.8888888889%;
   max-width: 1440px;
-  background-color: red;
+  height: 100vh;
+  padding: 25px 0;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 20px;
 }
 .container .panel:nth-child(2n+1) {
   background-color: #E47525;
@@ -123,12 +147,23 @@ h6 {
   color: #FFF9E3;
   text-align: center;
 }
+.container .panel:first-of-type .pageHeaderContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .container .panel:first-of-type h1 {
   text-transform: none;
   margin-bottom: 72px;
 }
 .container .panel:first-of-type p {
   font-size: 1.25rem;
+  text-align: center;
+  animation: fadein 0.75s ease-out 1s both;
+}
+.container .panel:first-of-type p:nth-of-type(2) {
+  animation: fadein 0.75s ease-out 3s both;
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -16,10 +16,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
 
-        .paneContent {
+        .panelContent {
+            width: (1280 / 1440) * 100%;
             max-width: 1440px;
-            background-color: red;
+            height: 100vh;
+            padding: 25px 0;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-gap: 20px;
         }
 
         &:nth-child(2n+1) {
@@ -31,6 +37,13 @@
             color: vars.$cream;
             text-align: center;
 
+            .pageHeaderContent {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
             h1 {
                 text-transform: none;
                 margin-bottom: 72px;
@@ -38,6 +51,12 @@
 
             p {
                 font-size: 1.25rem;
+                text-align: center;
+                animation: fadein .75s ease-out 1s both;
+            }
+
+            p:nth-of-type(2) {
+                animation: fadein .75s ease-out 3s both;
             }
         }
     }
