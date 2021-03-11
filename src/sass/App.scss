@@ -1,6 +1,44 @@
-@import "meyer";
-@import "variables";
+@use "meyer";
+@use "variables" as vars;
+@use "defaults";
 
-p {
-    @include f-roboto-mono-medium;
+.container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+
+    .panel {
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        height: 100vh;
+        background-color: vars.$mint-tea;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .paneContent {
+            max-width: 1440px;
+            background-color: red;
+        }
+
+        &:nth-child(2n+1) {
+            background-color: vars.$coffee;
+        }
+
+        &:first-of-type {
+            background-color: vars.$chalkboard;
+            color: vars.$cream;
+            text-align: center;
+
+            h1 {
+                text-transform: none;
+                margin-bottom: 72px;
+            }
+
+            p {
+                font-size: 1.25rem;
+            }
+        }
+    }
 }
