@@ -17,10 +17,11 @@
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        flex-direction: column;
 
         .panelContent {
             width: (1280 / 1440) * 100%;
-            max-width: 1440px;
+
             height: 100vh;
             padding: 25px 0;
             display: grid;
@@ -42,21 +43,38 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-            }
 
+                h1 {
+                    text-transform: none;
+                    margin-bottom: 72px;
+                }
+
+                p {
+                    font-size: 1.25rem;
+                    text-align: center;
+                    animation: fadein .75s ease-out 1s both;
+                }
+
+                p:nth-of-type(2) {
+                    animation: fadein .75s ease-out 3s both;
+                }
+
+                img {
+                    position: absolute;
+                    bottom: 25px;
+                    animation: .5s ease-in-out 0s infinite alternate both bounce, fadein .75s ease-out 5s both;
+
+                    &.hidden {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &.notfound {
             h1 {
-                text-transform: none;
-                margin-bottom: 72px;
-            }
-
-            p {
-                font-size: 1.25rem;
-                text-align: center;
-                animation: fadein .75s ease-out 1s both;
-            }
-
-            p:nth-of-type(2) {
-                animation: fadein .75s ease-out 3s both;
+                @include vars.roboto-mono-medium;
+                font-size: 10rem;
             }
         }
     }

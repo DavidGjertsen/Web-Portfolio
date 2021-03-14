@@ -68,6 +68,14 @@ table {
     opacity: 0;
   }
 }
+@keyframes bounce {
+  from {
+    bottom: 25px;
+  }
+  to {
+    bottom: 15px;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -115,6 +123,15 @@ h6 {
   font-size: 1rem;
 }
 
+a {
+  color: #FFF9E3;
+  -webkit-transition: color 0.1s ease-out;
+  transition: color 0.1s ease-out;
+}
+a:hover {
+  color: #E47525;
+}
+
 .container {
   height: 100vh;
   overflow-y: scroll;
@@ -129,10 +146,10 @@ h6 {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  flex-direction: column;
 }
 .container .panel .panelContent {
   width: 88.8888888889%;
-  max-width: 1440px;
   height: 100vh;
   padding: 25px 0;
   display: grid;
@@ -153,17 +170,30 @@ h6 {
   align-items: center;
   justify-content: center;
 }
-.container .panel:first-of-type h1 {
+.container .panel:first-of-type .pageHeaderContent h1 {
   text-transform: none;
   margin-bottom: 72px;
 }
-.container .panel:first-of-type p {
+.container .panel:first-of-type .pageHeaderContent p {
   font-size: 1.25rem;
   text-align: center;
   animation: fadein 0.75s ease-out 1s both;
 }
-.container .panel:first-of-type p:nth-of-type(2) {
+.container .panel:first-of-type .pageHeaderContent p:nth-of-type(2) {
   animation: fadein 0.75s ease-out 3s both;
+}
+.container .panel:first-of-type .pageHeaderContent img {
+  position: absolute;
+  bottom: 25px;
+  animation: 0.5s ease-in-out 0s infinite alternate both bounce, fadein 0.75s ease-out 5s both;
+}
+.container .panel:first-of-type .pageHeaderContent img.hidden {
+  display: none;
+}
+.container .panel.notfound h1 {
+  font-family: "Roboto Mono";
+  font-weight: 500;
+  font-size: 10rem;
 }
 
 /*# sourceMappingURL=App.css.map */
