@@ -8,7 +8,7 @@ export const LandingPage = () => {
             <Panel />
             <Panel />
         </div>
-    );
+    )
 }
 
 const PageHeader = () => {
@@ -36,5 +36,5 @@ const Panel = () => {
                 <h6>Test</h6>
             </div>
         </section>
-    );
+    )
 }

@@ -12,7 +12,7 @@ function App() {
                 </Switch>
             </Router>
         </div>
-    );
+    )
 }
 
 const NotFound = () => {
