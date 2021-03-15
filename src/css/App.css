@@ -81,7 +81,7 @@ table {
 }
 
 html {
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   font-weight: 500;
   color: #262626;
   height: 100vh;
@@ -94,7 +94,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Homemade Apple";
+  font-family: "Homemade Apple", serif;
   text-transform: lowercase;
   line-height: 1.3125;
 }
@@ -191,7 +191,7 @@ a:hover {
   display: none;
 }
 .container .panel.notfound h1 {
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
   font-weight: 500;
   font-size: 10rem;
 }

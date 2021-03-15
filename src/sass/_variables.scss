@@ -2,17 +2,17 @@
 
 //fonts
 @mixin roboto-mono {
-    font-family: "Roboto Mono";
+    font-family: "Roboto Mono", monospace;
     font-weight: 400;
 }
 
 @mixin roboto-mono-medium {
-    font-family: "Roboto Mono";
+    font-family: "Roboto Mono", monospace;
     font-weight: 500;
 }
 
 @mixin homemade-apple {
-    font-family: "Homemade Apple";
+    font-family: "Homemade Apple", serif;
 }
 
 //colors
