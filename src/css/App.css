@@ -150,14 +150,50 @@ a:hover {
 }
 .container .panel .panelContent {
   width: 88.8888888889%;
+  max-width: 1280px;
   height: 100vh;
   padding: 25px 0;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-gap: 20px;
+  grid-column-gap: 20px;
+}
+.container .panel .panelContent img {
+  order: 1;
+  max-width: 100%;
+  max-height: 100%;
+  grid-column: 1/7;
+  margin: auto auto;
+  -webkit-filter: drop-shadow(0px 25px 50px rgba(38, 38, 38, 0.25));
+  filter: drop-shadow(0px 25px 50px rgba(38, 38, 38, 0.25));
+}
+.container .panel .panelContent .panelText {
+  order: 2;
+  grid-column: 7/10;
+  margin: auto auto;
+}
+.container .panel .panelContent .panelText h2 {
+  margin-bottom: 8px;
+}
+.container .panel .panelContent .panelText p {
+  margin-bottom: 16px;
+}
+.container .panel .panelContent .panelText a {
+  color: #262626;
+  font-weight: 500;
+}
+.container .panel .panelContent .panelText a:hover {
+  color: #FFF9E3;
 }
 .container .panel:nth-child(2n+1) {
   background-color: #E47525;
+}
+.container .panel:nth-child(2n+1) img {
+  order: 2;
+  grid-column: 6/10;
+}
+.container .panel:nth-child(2n+1) .panelText {
+  order: 1;
+  grid-column: 2/5;
 }
 .container .panel:first-of-type {
   background-color: #262626;
@@ -190,10 +226,42 @@ a:hover {
 .container .panel:first-of-type .pageHeaderContent img.hidden {
   display: none;
 }
+.container .panel:last-of-type {
+  background-color: #262626;
+  color: #FFF9E3;
+  text-align: center;
+}
+.container .panel:last-of-type h2 {
+  margin-bottom: 72px;
+}
+.container .panel:last-of-type p {
+  font-size: 1.25rem;
+}
+.container .panel:last-of-type nav p {
+  display: inline;
+  font-size: 1rem;
+}
+.container .panel:last-of-type nav p a {
+  padding: 0 1rem;
+}
 .container .panel.notfound h1 {
   font-family: "Roboto Mono", monospace;
   font-weight: 500;
   font-size: 10rem;
+}
+
+#copyright {
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  font-size: 0.75rem;
+  color: #FFF9E3;
+  opacity: 100;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+#copyright.hidden {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=App.css.map */

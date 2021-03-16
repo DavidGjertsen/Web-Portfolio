@@ -1,3 +1,4 @@
+import {useEffect, useState} from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import {LandingPage} from "./components/landing.js"
 import './css/App.css';
@@ -11,6 +12,7 @@ function App() {
                     <Route component = {NotFound} />
                 </Switch>
             </Router>
+            <Copyright />
         </div>
     )
 }
@@ -24,6 +26,12 @@ const NotFound = () => {
                 <p><a href="/">Go back?</a></p>
             </section>
         </div>
+    )
+}
+
+const Copyright = () => {
+    return(
+        <p id="copyright">&copy; David Gjertsen {new Date().getFullYear()}</p>
     )
 }
 

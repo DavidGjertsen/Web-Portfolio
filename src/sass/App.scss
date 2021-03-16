@@ -21,16 +21,59 @@
 
         .panelContent {
             width: (1280 / 1440) * 100%;
+            max-width: 1280px;
 
             height: 100vh;
             padding: 25px 0;
             display: grid;
             grid-template-columns: repeat(10, 1fr);
-            grid-gap: 20px;
+            grid-column-gap: 20px;
+
+            img {
+                order: 1;
+                max-width: 100%;
+                max-height: 100%;
+                grid-column: 1 / 7;
+                margin: auto auto;
+                @include vars.autoprefix(filter, drop-shadow(0px 25px 50px rgba(vars.$chalkboard, 0.25)), webkit);
+            }
+
+            .panelText {
+                order: 2;
+                grid-column: 7 / 10;
+                margin: auto auto;
+
+                h2 {
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    margin-bottom: 16px;
+                }
+
+                a {
+                    color: vars.$chalkboard;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: vars.$cream;
+                    }
+                }
+            }
         }
 
         &:nth-child(2n+1) {
             background-color: vars.$coffee;
+
+            img {
+                order: 2;
+                grid-column: 6 / 10;
+            }
+
+            .panelText {
+                order: 1;
+                grid-column: 2 / 5;
+            }
         }
 
         &:first-of-type {
@@ -71,11 +114,50 @@
             }
         }
 
+        &:last-of-type {
+            background-color: vars.$chalkboard;
+            color: vars.$cream;
+            text-align: center;
+
+            h2 {
+                margin-bottom: 72px;
+            }
+
+            p {
+                font-size: 1.25rem;
+            }
+
+            nav {
+                p {
+                    display: inline;
+                    font-size: 1rem;
+
+                    a {
+                        padding: 0 1rem;
+                    }
+                }
+            }
+        }
+
         &.notfound {
             h1 {
                 @include vars.roboto-mono-medium;
                 font-size: 10rem;
             }
         }
+    }
+}
+
+#copyright {
+    position: fixed;
+    bottom: 0;
+    right: 10px + 20px;
+    font-size: .75rem;
+    color: vars.$cream;
+    opacity: 100;
+    @include vars.autoprefix(transition, opacity .3s ease-out, webkit);
+
+    &.hidden {
+        opacity: 0;
     }
 }
