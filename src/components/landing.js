@@ -1,16 +1,14 @@
 import {useState, useEffect} from "react";
-import arrowDown from "../images/icons/arrow-down.png";
-import imageProjectOne from "../images/landing/project-one.png";
 
 export const LandingPage = () => {
     return(
         <div className = "container">
             <PageHeader />
-            <Project image={imageProjectOne} alt="A phone displaying It's Time" title="It's Time" text="A work tracking app to ensure your workers are doing what needs to be&nbsp;done." href="/its-time"/>
-            <Project image={imageProjectOne} alt="A placeholder" title="Placeholder" text="Blah blah blah" href="/placeholder"/>
-            <Project image={imageProjectOne} alt="A placeholder" title="Placeholder" text="Blah blah blah" href="/placeholder"/>
-            <Project image={imageProjectOne} alt="A placeholder" title="Placeholder" text="Blah blah blah" href="/placeholder"/>
-            <Project image={imageProjectOne} alt="A placeholder" title="Placeholder" text="Blah blah blah" href="/placeholder"/>
+            <Project image="images/landing/project-one.png" alt="A phone displaying It's Time." title="It's&nbsp;Time" text="A work tracking app to ensure your workers are doing what needs to be&nbsp;done." href="/its-time"/>
+            <Project image="images/landing/project-two.png" alt="React code written with Caffeine Mono." title="Caffeine Mono" text="An aesthetically pleasing yet functional programming&nbsp;typeface." href="/caffeine-mono"/>
+            <Project image="images/landing/project-three.png" alt="Phones showing the Take Back Your Phone app." title="Take&nbsp;Back Your&nbsp;Phone" text="Hate spam callers? Here's a call filtering app with a vengeful&nbsp;twist." href="/take-back-your-phone"/>
+            <Project image="images/landing/project-four.png" alt="A screen from the Digital Information Design kiosk." title="Digital Information Design&nbsp;Kiosk" text="Choose your character and follow them on an adventure through Winthrop University's DIFD&nbsp;program." href="/difd-kiosk"/>
+            <Project image="images/landing/project-five.png" alt="Four digital illustration pieces." title="Digital Illustration" text="A collection of illustration&nbsp;work." href="/illustration"/>
             <Footer />
         </div>
     )
@@ -37,7 +35,7 @@ const PageHeader = () => {
                 <h1>David Gjertsen</h1>
                 <p>I am a digital creator and front-end web designer.</p>
                 <p>Let me show you what I do.</p>
-                <img id="scrollPrompt" src={arrowDown} alt="Scroll down for more" className={active ? "visible" : "hidden"}/>
+                <img id="scrollPrompt" src="images/icons/arrow-down.png" alt="Scroll down for more" className={active ? "visible" : "hidden"}/>
             </div>
         </section>
     )
@@ -63,12 +61,13 @@ const Footer = () => {
         <section className = "panel">
             <div className = "footerContent">
                 <h2>So there you have it</h2>
-                <p>Thank's for visiting. I hope you enjoyed my work.</p>
+                <p>If you're interested in what I do, please contact me.</p>
                 <nav>
-                    <p><a href="sendto:davidgjertsen8635@gmail.com">Send me an email</a></p>
-                    <p><a href="https://twitter.com/EspressoTheWolf">Follow me on Twitter</a></p>
-                    <p><a href="tel:(704)352-8053">Give me a call</a></p>
+                    <p><a href="mailto:davidgjertsen8635@gmail.com">Send me an email</a></p>
+                    <p><a href="https://twitter.com/EspressoTheWolf" target="_Blank" rel="noreferrer">Follow me on Twitter</a></p>
+                    <p><a href="tel:(704) 352-8053">Give me a call</a></p>
                 </nav>
+                <p>Thank you for visiting.</p>
             </div>
         </section>
     )
