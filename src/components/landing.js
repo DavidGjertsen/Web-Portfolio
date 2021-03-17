@@ -1,6 +1,35 @@
 import {useState, useEffect} from "react";
 
 export const LandingPage = () => {
+    useEffect(() => {
+        const elements = [...document.querySelectorAll(".fadeIn")];
+        console.log(elements);
+
+        const options = {
+            rootMargin: "0px",
+            threshold: 0.25
+        }
+
+        const callback = (elements, observer) => {
+            elements.forEach((element) => {
+                const {target} = element;
+
+                if(element.intersectionRatio >= 0.25) {
+                    target.classList.add("visible");
+                } else {
+                    target.classList.remove("visible");
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(callback, options);
+
+        elements.forEach((element, index) => {
+            observer.observe(element);
+        });
+
+    });
+
     return(
         <div className = "container">
             <PageHeader />
@@ -46,7 +75,7 @@ const Project = (props) => {
         <section className = "panel">
             <div className = "panelContent">
                 <img src={props.image} alt={props.alt}/>
-                <div className="panelText">
+                <div className="panelText fadeIn">
                     <h2>{props.title}</h2>
                     <p>{props.text}</p>
                     <a href={props.href}>View&nbsp;project</a>

@@ -22,8 +22,8 @@ const NotFound = () => {
         <div className = "container">
             <section className = "panel notfound">
                 <h1>404</h1>
-                <p>You found an error screen.</p>
-                <p><a href="/">Go back?</a></p>
+                <p>This website is still under construction. Check back soon!</p>
+                <p><a href="/">Go back</a></p>
             </section>
         </div>
     )

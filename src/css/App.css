@@ -170,8 +170,19 @@ a:hover {
 .container .panel .panelContent .panelText {
   order: 2;
   grid-column: 8/11;
-  margin-top: calc(60vh - 50%);
+  margin: auto auto;
   width: 100%;
+  position: relative;
+}
+.container .panel .panelContent .panelText.fadeIn {
+  opacity: 0;
+  top: 50px;
+  transition: opacity 0.5s ease-out, top 0.5s ease-out;
+  transition-delay: 0.25s;
+}
+.container .panel .panelContent .panelText.fadeIn.visible {
+  opacity: 100;
+  top: 0px;
 }
 .container .panel .panelContent .panelText h2 {
   margin-bottom: 48px;
@@ -223,7 +234,7 @@ a:hover {
 .container .panel:first-of-type .pageHeaderContent img {
   position: absolute;
   bottom: 25px;
-  animation: 0.5s ease-in-out 0s infinite alternate both bounce, fadein 0.75s ease-out 5s both;
+  animation: 0.5s ease-in-out 0s infinite alternate both bounce, fadein 0.75s ease-out 7s both;
 }
 .container .panel:first-of-type .pageHeaderContent img.hidden {
   display: none;
