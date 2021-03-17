@@ -88,7 +88,7 @@ const Project = (props) => {
 const Footer = () => {
     return(
         <section className = "panel">
-            <div className = "footerContent">
+            <div className = "footerContent fadeIn">
                 <h2>So there you have it</h2>
                 <p>If you're interested in what I do, please contact me.</p>
                 <nav>

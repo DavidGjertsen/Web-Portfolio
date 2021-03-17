@@ -125,11 +125,23 @@ h6 {
 
 a {
   color: #FFF9E3;
-  -webkit-transition: color 0.1s ease-out;
-  transition: color 0.1s ease-out;
+  -webkit-transition: color 0.1s cubic-bezier(0.19, 0.61, 0.18, 0.99);
+  transition: color 0.1s cubic-bezier(0.19, 0.61, 0.18, 0.99);
 }
 a:hover {
   color: #E47525;
+}
+
+.fadeIn {
+  position: relative;
+  opacity: 0;
+  top: 50px;
+  transition: opacity 0.75s cubic-bezier(0.19, 0.61, 0.18, 0.99), top 0.75s cubic-bezier(0.19, 0.61, 0.18, 0.99);
+  transition-delay: 0.25s;
+}
+.fadeIn.visible {
+  opacity: 100;
+  top: 0px;
 }
 
 .container {
@@ -164,8 +176,6 @@ a:hover {
   margin: auto auto;
   -webkit-filter: drop-shadow(0px 25px 50px rgba(38, 38, 38, 0.3));
   filter: drop-shadow(0px 25px 50px rgba(38, 38, 38, 0.3));
-  -webkit-transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
 }
 .container .panel .panelContent .panelText {
   order: 2;
@@ -173,16 +183,6 @@ a:hover {
   margin: auto auto;
   width: 100%;
   position: relative;
-}
-.container .panel .panelContent .panelText.fadeIn {
-  opacity: 0;
-  top: 50px;
-  transition: opacity 0.5s ease-out, top 0.5s ease-out;
-  transition-delay: 0.25s;
-}
-.container .panel .panelContent .panelText.fadeIn.visible {
-  opacity: 100;
-  top: 0px;
 }
 .container .panel .panelContent .panelText h2 {
   margin-bottom: 48px;
@@ -226,15 +226,15 @@ a:hover {
 .container .panel:first-of-type .pageHeaderContent p {
   font-size: 1.25rem;
   text-align: center;
-  animation: fadein 0.75s ease-out 1s both;
+  animation: fadein 0.75s cubic-bezier(0.19, 0.61, 0.18, 0.99) 1s both;
 }
 .container .panel:first-of-type .pageHeaderContent p:nth-of-type(2) {
-  animation: fadein 0.75s ease-out 3s both;
+  animation: fadein 0.75s cubic-bezier(0.19, 0.61, 0.18, 0.99) 2s both;
 }
 .container .panel:first-of-type .pageHeaderContent img {
   position: absolute;
   bottom: 25px;
-  animation: 0.5s ease-in-out 0s infinite alternate both bounce, fadein 0.75s ease-out 7s both;
+  animation: 0.5s cubic-bezier(0.5, 0.14, 0.39, 0.99) 0s infinite alternate both bounce, fadein 0.5s cubic-bezier(0.5, 0.14, 0.39, 0.99) 5s both;
 }
 .container .panel:first-of-type .pageHeaderContent img.hidden {
   display: none;
@@ -264,6 +264,34 @@ a:hover {
   font-family: "Roboto Mono", monospace;
   font-weight: 500;
   font-size: 10rem;
+  position: relative;
+  animation: shake 0.5s ease-in-out;
+}
+.container .panel.notfound p {
+  animation: fadein 0.75s cubic-bezier(0.19, 0.61, 0.18, 0.99) 2s both;
+}
+.container .panel.notfound p:first-of-type {
+  animation: fadein 0.75s cubic-bezier(0.19, 0.61, 0.18, 0.99) 1s both;
+}
+@keyframes shake {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 3px;
+  }
+  40% {
+    left: -3px;
+  }
+  60% {
+    left: 2px;
+  }
+  80% {
+    left: -2px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 
 #copyright {
@@ -273,11 +301,6 @@ a:hover {
   font-size: 0.75rem;
   color: #FFF9E3;
   opacity: 100;
-  -webkit-transition: opacity 0.3s ease-out;
-  transition: opacity 0.3s ease-out;
-}
-#copyright.hidden {
-  opacity: 0;
 }
 
 /*# sourceMappingURL=App.css.map */

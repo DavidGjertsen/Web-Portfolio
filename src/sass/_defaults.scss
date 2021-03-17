@@ -48,9 +48,22 @@ h6 {
 
 a {
     color: vars.$cream;
-    @include vars.autoprefix(transition, color .1s ease-out, webkit);
+    @include vars.autoprefix(transition, color .1s cubic-bezier(.19,.61,.18,.99), webkit);
 
     &:hover {
         color: vars.$coffee;
+    }
+}
+
+.fadeIn {
+    position: relative;
+    opacity: 0;
+    top: 50px;
+    transition: opacity .75s vars.$snap-ease-out, top .75s vars.$snap-ease-out;
+    transition-delay: .25s;
+
+    &.visible {
+        opacity: 100;
+        top: 0px;
     }
 }

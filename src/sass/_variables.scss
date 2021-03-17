@@ -21,6 +21,9 @@ $coffee: #E47525;
 $mint-tea: #63DACC;
 $chalkboard: #262626;
 
+$snap-ease-out: cubic-bezier(.19,.61,.18,.99);
+$snap-ease: cubic-bezier(.5,.14,.39,.99);
+
 //Mixins
 //Autoprefixer
 @mixin autoprefix($prop, $value, $prefixes: ()) {
