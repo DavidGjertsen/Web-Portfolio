@@ -64,7 +64,7 @@ const PageHeader = () => {
                 <h1>David Gjertsen</h1>
                 <p>I am a digital creator and front-end web designer.</p>
                 <p>Let me show you what I do.</p>
-                <img id="scrollPrompt" src="images/icons/arrow-down.png" alt="Scroll down for more" className={active ? "visible" : "hidden"}/>
+                <img id="scrollPrompt" src="images/icons/arrow-down.svg" alt="Scroll down for more" className={active ? "visible" : "hidden"}/>
             </div>
         </section>
     )
@@ -93,7 +93,7 @@ const Footer = () => {
                 <p>If you're interested in what I do, please contact me.</p>
                 <nav>
                     <p><a href="mailto:davidgjertsen8635@gmail.com">Send me an email</a></p>
-                    <p><a href="https://twitter.com/EspressoTheWolf" target="_Blank" rel="noreferrer">Follow me on Twitter</a></p>
+                    <p><a href="https://twitter.com/" target="_Blank" rel="noreferrer">Follow me on Twitter</a></p>
                     <p><a href="tel:(704) 352-8053">Give me a call</a></p>
                 </nav>
                 <p>Thank you for visiting.</p>
