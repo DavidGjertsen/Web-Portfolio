@@ -88,15 +88,17 @@ const Project = (props) => {
 const Footer = () => {
     return(
         <section className = "panel">
-            <div className = "footerContent fadeIn">
+            <div className = "footerContent">
                 <h2>So there you have it</h2>
-                <p>If you're interested in what I do, please contact me.</p>
-                <nav>
-                    <p><a href="mailto:davidgjertsen8635@gmail.com">Send me an email</a></p>
-                    <p><a href="https://twitter.com/" target="_Blank" rel="noreferrer">Follow me on Twitter</a></p>
-                    <p><a href="tel:(704) 352-8053">Give me a call</a></p>
-                </nav>
-                <p>Thank you for visiting.</p>
+                <div className="fadeIn">
+                    <p>If you're interested in what I do, please contact me.</p>
+                    <nav>
+                        <p><a href="mailto:davidgjertsen8635@gmail.com">Send me an email</a></p>
+                        <p><a href="https://twitter.com/" target="_Blank" rel="noreferrer">Follow me on Twitter</a></p>
+                        <p><a href="tel:(704) 352-8053">Give me a call</a></p>
+                    </nav>
+                    <p>Thank you for visiting.</p>
+                </div>
             </div>
         </section>
     )

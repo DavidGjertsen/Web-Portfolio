@@ -25,6 +25,7 @@ const NotFound = () => {
             <section className = "panel notfound">
                 <h1>404</h1>
                 <p>This website is still under construction. Check back soon!</p>
+                {/* eslint-disable-next-line */}
                 <p><a href="javascript:history.back()">Go back</a></p>
             </section>
         </div>
