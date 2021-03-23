@@ -1,5 +1,5 @@
 //import {useEffect, useState} from "react";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import {LandingPage} from "./components/landing.js";
 import {NavigationMenu} from "./components/navigation.js";
 import './css/App.css';
@@ -26,7 +26,7 @@ const NotFound = () => {
                 <h1>404</h1>
                 <p>This website is still under construction. Check back soon!</p>
                 {/* eslint-disable-next-line */}
-                <p><a href="javascript:history.back()">Go back</a></p>
+                <p><Link to="/">Go back</Link></p>
             </section>
         </div>
     )

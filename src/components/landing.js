@@ -1,4 +1,5 @@
 import {useState, useEffect} from "react";
+import {Link} from "react-router-dom";
 
 export const LandingPage = () => {
     useEffect(() => {
@@ -78,7 +79,7 @@ const Project = (props) => {
                 <div className="panelText fadeIn">
                     <h2>{props.title}</h2>
                     <p>{props.text}</p>
-                    <a href={props.href}>View&nbsp;project</a>
+                    <Link to={props.href}>View&nbsp;project</Link>
                 </div>
             </div>
         </section>
