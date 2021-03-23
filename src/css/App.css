@@ -311,11 +311,9 @@ a:hover {
 .container .panel:last-of-type nav {
   margin-bottom: 2rem;
 }
-.container .panel:last-of-type nav p {
+.container .panel:last-of-type nav a {
   display: inline;
-  font-size: 1rem;
-}
-.container .panel:last-of-type nav p a {
+  font-size: 1.25rem;
   padding: 0 1rem;
 }
 .container .panel.notfound h1 {

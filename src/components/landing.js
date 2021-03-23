@@ -90,15 +90,14 @@ const Footer = () => {
     return(
         <section className = "panel">
             <div className = "footerContent">
-                <h2>So there you have it</h2>
+                <h2>Thank you</h2>
                 <div className="fadeIn">
-                    <p>If you're interested in what I do, please contact me.</p>
+                    <p>Of course, there's always more to see.</p>
                     <nav>
-                        <p><a href="mailto:davidgjertsen8635@gmail.com">Send me an email</a></p>
-                        <p><a href="https://twitter.com/david_gjertsen" target="_blank" rel="noreferrer">Follow me on Twitter</a></p>
-                        <p><a href="tel:(704) 352-8053">Give me a call</a></p>
+                        <Link to="/about-me">About me</Link>
+                        <Link to="/contact-me">Get in touch</Link>
+                        <Link to="/blog">Read my blog</Link>
                     </nav>
-                    <p>Thank you for visiting.</p>
                 </div>
             </div>
         </section>
