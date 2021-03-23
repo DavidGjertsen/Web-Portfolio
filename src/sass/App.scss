@@ -10,6 +10,23 @@
         z-index: 100;
     }
 
+    .navfade {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        background-color: rgba(vars.$chalkboard, 0.75);
+        z-index: 98;
+        opacity: 0;
+        pointer-events: none;
+
+        @include vars.autoprefix(transition, opacity .3s vars.$snap-ease-out, webkit);
+
+        &.visible {
+            opacity: 100;
+            pointer-events: all;
+        }
+    }
+
     .mainNav {
         position: fixed;
         top: 0;
@@ -20,6 +37,7 @@
         height: 100vh;
         background-color: vars.$chalkboard;
         opacity: 0;
+        z-index: 99;
 
         @include vars.autoprefix(transition, (right .3s vars.$snap-ease-out, opacity .3s vars.$snap-ease-out), webkit);
 
@@ -250,7 +268,7 @@
 #copyright {
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    left: 30px;
     font-size: .75rem;
     color: vars.$cream;
     opacity: 100;
