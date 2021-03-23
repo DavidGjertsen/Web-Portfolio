@@ -22,7 +22,7 @@
         @include vars.autoprefix(transition, opacity .3s vars.$snap-ease-out, webkit);
 
         &.visible {
-            opacity: 100;
+            opacity: 1;
             pointer-events: all;
         }
     }
@@ -43,7 +43,7 @@
 
 
         &.visible {
-            opacity: 100%;
+            opacity: 1;
             right: 0;
         }
 

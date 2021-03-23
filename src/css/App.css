@@ -162,7 +162,7 @@ a:hover {
   transition: opacity 0.3s cubic-bezier(0.19, 0.61, 0.18, 0.99);
 }
 .navigation .navfade.visible {
-  opacity: 100;
+  opacity: 1;
   pointer-events: all;
 }
 .navigation .mainNav {
@@ -180,7 +180,7 @@ a:hover {
   transition: right 0.3s cubic-bezier(0.19, 0.61, 0.18, 0.99), opacity 0.3s cubic-bezier(0.19, 0.61, 0.18, 0.99);
 }
 .navigation .mainNav.visible {
-  opacity: 100%;
+  opacity: 1;
   right: 0;
 }
 .navigation .mainNav a {
