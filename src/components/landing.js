@@ -64,7 +64,7 @@ const PageHeader = () => {
             <div className = "pageHeaderContent">
                 <h1>David Gjertsen</h1>
                 <p>I am a digital creator and front-end web designer.</p>
-                <p>Let me show you what I do.</p>
+                <p>I'm good at making things pretty. Have a look.</p>
                 <img id="scrollPrompt" src="images/icons/arrow-down.svg" alt="Scroll down for more" className={active ? "visible" : "hidden"}/>
             </div>
         </section>

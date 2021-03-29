@@ -47,7 +47,7 @@ export const NavigationMenu = () => {
                     <li><NavLink className="navLink" to="/illustration" activeClassName="selected">Digital Illustration</NavLink></li>
                 </ul>
                 <li><NavLink className="navLink" to="/about-me" activeClassName="selected">About Me</NavLink></li>
-                <li><NavLink className="navLink" to="/contact-me" activeClassName="selected">Contact</NavLink></li>
+                <li><NavLink className="navLink" to="/get-in-touch" activeClassName="selected">Get in touch</NavLink></li>
                 <li><NavLink className="navLink" to="/blog" activeClassName="selected">Blog</NavLink></li>
             </ul>
         </div>

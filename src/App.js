@@ -2,6 +2,7 @@
 import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import {LandingPage} from "./components/landing.js";
 import {NavigationMenu} from "./components/navigation.js";
+import {Contacts} from "./components/contact.js";
 import './css/App.css';
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
             <Router>
                 <NavigationMenu />
                 <Switch>
-                    <Route path = "/" exact component = {LandingPage} />
+                    <Route path="/" exact component={LandingPage} />
+                    <Route path="/get-in-touch" exact component={Contacts} />
                     <Route component = {NotFound} />
                 </Switch>
             </Router>
