@@ -294,26 +294,26 @@
 
         &.projectHeader {
             text-align: left;
-            color: vars.$cream;
+            color: vars.$chalkboard;
 
             &.projectOne {
-                @include vars.gradient(vars.$chalkboard, "../images/itstime.png");
+                @include vars.gradient(vars.$mint-tea, "../images/itstime.png");
             }
 
             &.projectTwo {
-                @include vars.gradient(vars.$chalkboard, "../images/caffeinemono.png");
+                @include vars.gradient(vars.$coffee, "../images/caffeinemono.png");
             }
 
             &.projectThree {
-                @include vars.gradient(vars.$chalkboard, "../images/takebackyourphone.png");
+                @include vars.gradient(vars.$mint-tea, "../images/takebackyourphone.png");
             }
 
             &.projectFour {
-                @include vars.gradient(vars.$chalkboard, "../images/difdkiosk.png");
+                @include vars.gradient(vars.$coffee, "../images/difdkiosk.png");
             }
 
             &.projectFive {
-                @include vars.gradient(vars.$chalkboard, "../images/exhibition.gif");
+                @include vars.gradient(vars.$mint-tea, "../images/exhibition.gif");
             }
 
             .projectHeaderContent {

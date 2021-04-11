@@ -377,34 +377,34 @@ a:hover {
 }
 .container .panel.projectHeader {
   text-align: left;
-  color: #FFF9E3;
+  color: #262626;
 }
 .container .panel.projectHeader.projectOne {
-  background: linear-gradient(90deg, #262626 0%, rgba(38, 38, 38, 0.9) 35%, rgba(38, 38, 38, 0.3) 100%), url("../images/itstime.png");
+  background: linear-gradient(90deg, #63dacc 0%, rgba(99, 218, 204, 0.9) 35%, rgba(99, 218, 204, 0.3) 100%), url("../images/itstime.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container .panel.projectHeader.projectTwo {
-  background: linear-gradient(90deg, #262626 0%, rgba(38, 38, 38, 0.9) 35%, rgba(38, 38, 38, 0.3) 100%), url("../images/caffeinemono.png");
+  background: linear-gradient(90deg, #e47525 0%, rgba(228, 117, 37, 0.9) 35%, rgba(228, 117, 37, 0.3) 100%), url("../images/caffeinemono.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container .panel.projectHeader.projectThree {
-  background: linear-gradient(90deg, #262626 0%, rgba(38, 38, 38, 0.9) 35%, rgba(38, 38, 38, 0.3) 100%), url("../images/takebackyourphone.png");
+  background: linear-gradient(90deg, #63dacc 0%, rgba(99, 218, 204, 0.9) 35%, rgba(99, 218, 204, 0.3) 100%), url("../images/takebackyourphone.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container .panel.projectHeader.projectFour {
-  background: linear-gradient(90deg, #262626 0%, rgba(38, 38, 38, 0.9) 35%, rgba(38, 38, 38, 0.3) 100%), url("../images/difdkiosk.png");
+  background: linear-gradient(90deg, #e47525 0%, rgba(228, 117, 37, 0.9) 35%, rgba(228, 117, 37, 0.3) 100%), url("../images/difdkiosk.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .container .panel.projectHeader.projectFive {
-  background: linear-gradient(90deg, #262626 0%, rgba(38, 38, 38, 0.9) 35%, rgba(38, 38, 38, 0.3) 100%), url("../images/exhibition.gif");
+  background: linear-gradient(90deg, #63dacc 0%, rgba(99, 218, 204, 0.9) 35%, rgba(99, 218, 204, 0.3) 100%), url("../images/exhibition.gif");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
