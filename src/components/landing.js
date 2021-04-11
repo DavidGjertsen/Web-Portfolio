@@ -55,8 +55,8 @@ export const LandingPage = () => {
             <Project
                 image="images/landing/project-four.png"
                 alt="A screen from the Digital Information Design kiosk."
-                title="Digital Information Design Kiosk"
-                text="Choose your character and follow them on an adventure through Winthrop University's DIFD program."
+                title="DIFD Kiosk"
+                text="Choose your character and follow them on an adventure through Winthrop University's Digital Information Design program."
                 href="/difd-kiosk"/>
             <Project
                 image="images/landing/project-five.png"
@@ -85,7 +85,7 @@ const PageHeader = () => {
     });
 
     return(
-        <section className="panel">
+        <section className="panel header">
             <div className="pageHeaderContent">
                 <h1>David Gjertsen</h1>
                 <p>I am a front-end web developer and digital creator.</p>
@@ -117,7 +117,7 @@ const Project = (props) => {
 
 const Footer = () => {
     return(
-        <section className="panel">
+        <section className="panel footer">
             <div className="footerContent">
                 <h2>Thank you</h2>
                 <div className="fadeIn">

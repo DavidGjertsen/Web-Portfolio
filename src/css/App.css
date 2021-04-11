@@ -230,14 +230,14 @@ a:hover {
   order: 1;
   max-width: 100%;
   max-height: 100%;
-  grid-column: 1/7;
+  grid-column: 1/6;
   margin: auto auto;
   -webkit-filter: drop-shadow(0px 25px 50px rgba(38, 38, 38, 0.3));
   filter: drop-shadow(0px 25px 50px rgba(38, 38, 38, 0.3));
 }
 .container .panel .panelContent .panelText {
   order: 2;
-  grid-column: 8/11;
+  grid-column: 7/11;
   margin: auto auto;
   width: 100%;
   position: relative;
@@ -247,10 +247,12 @@ a:hover {
 }
 .container .panel .panelContent .panelText p {
   margin-bottom: 16px;
+  font-size: 1.125rem;
 }
 .container .panel .panelContent .panelText a {
   color: #262626;
   font-weight: 500;
+  font-size: 1.125rem;
 }
 .container .panel .panelContent .panelText a:hover {
   color: #FFF9E3;
@@ -260,61 +262,66 @@ a:hover {
 }
 .container .panel:nth-child(2n+1) img {
   order: 2;
-  grid-column: 5/11;
+  grid-column: 6/11;
 }
 .container .panel:nth-child(2n+1) .panelText {
   order: 1;
-  grid-column: 1/4;
+  grid-column: 1/5;
 }
-.container .panel:first-of-type {
+.container .panel.header {
   background-color: #262626;
   color: #FFF9E3;
   text-align: center;
 }
-.container .panel:first-of-type .pageHeaderContent {
+.container .panel.header .pageHeaderContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.container .panel:first-of-type .pageHeaderContent h1 {
+.container .panel.header .pageHeaderContent h1 {
   text-transform: none;
   margin-bottom: 56px;
 }
-.container .panel:first-of-type .pageHeaderContent p {
+.container .panel.header .pageHeaderContent p {
   font-size: 1.25rem;
   text-align: center;
   animation: fadein 0.75s cubic-bezier(0.19, 0.61, 0.18, 0.99) 1s both;
 }
-.container .panel:first-of-type .pageHeaderContent p:nth-of-type(2) {
+.container .panel.header .pageHeaderContent p:nth-of-type(2) {
   animation: fadein 0.75s cubic-bezier(0.19, 0.61, 0.18, 0.99) 2s both;
 }
-.container .panel:first-of-type .pageHeaderContent img {
+.container .panel.header .pageHeaderContent img {
   position: absolute;
   bottom: 25px;
   animation: 0.5s cubic-bezier(0.5, 0.14, 0.39, 0.99) 0s infinite alternate both bounce, fadein 0.5s cubic-bezier(0.5, 0.14, 0.39, 0.99) 5s both;
 }
-.container .panel:first-of-type .pageHeaderContent img.hidden {
+.container .panel.header .pageHeaderContent img.hidden {
   display: none;
 }
-.container .panel:last-of-type {
+.container .panel.footer {
   background-color: #262626;
   color: #FFF9E3;
   text-align: center;
 }
-.container .panel:last-of-type h2 {
+.container .panel.footer h2 {
   margin-bottom: 36px;
 }
-.container .panel:last-of-type p {
+.container .panel.footer p {
   font-size: 1.25rem;
 }
-.container .panel:last-of-type nav {
+.container .panel.footer nav {
   margin-bottom: 2rem;
 }
-.container .panel:last-of-type nav a {
+.container .panel.footer nav a {
   display: inline;
   font-size: 1.25rem;
   padding: 0 1rem;
+}
+.container .panel.notfound {
+  background-color: #262626;
+  color: #FFF9E3;
+  font-size: 1.125rem;
 }
 .container .panel.notfound h1 {
   font-family: "Roboto Mono", monospace;
@@ -349,7 +356,22 @@ a:hover {
     left: 0px;
   }
 }
-.container .panel .contactPage h1 {
+.container .panel.altColor {
+  background-color: #63DACC;
+}
+.container .panel.contact {
+  background-color: #E47525;
+  color: #262626;
+  text-align: center;
+  font-size: 1.125rem;
+}
+.container .panel.contact a {
+  color: #262626;
+}
+.container .panel.contact a:hover {
+  color: #FFF9E3;
+}
+.container .panel.contact .contactPage h1 {
   margin-bottom: 36px;
   font-size: 3rem;
 }
@@ -359,7 +381,7 @@ a:hover {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-row: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 20px;
 }
 .container .panel .aboutPage img {

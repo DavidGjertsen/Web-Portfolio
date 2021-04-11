@@ -18,14 +18,14 @@ export const NavigationMenu = () => {
         const navElements = document.querySelectorAll(".navLink:not(.selected)");
 
         navElements.forEach(element => {
-            element.addEventListener("click", toggleActiveOnClick);
+            element.addEventListener("click", toggleActive);
         });
 
         return function cleanup() {
             document.getElementById("menuButton").removeEventListener("click", toggleActive);
             document.querySelector(".navfade").removeEventListener("click", toggleActive);
             navElements.forEach(element => {
-                element.removeEventListener("click", toggleActiveOnClick);
+                element.removeEventListener("click", toggleActive);
             });
         }
     });

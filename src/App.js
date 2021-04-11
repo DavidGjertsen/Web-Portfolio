@@ -25,7 +25,7 @@ function App() {
 
 const NotFound = () => {
     return(
-        <div className = "container">
+        <div className = "container 404">
             <section className = "panel notfound">
                 <h1>404</h1>
                 <p>This website is still under construction. Check back soon!</p>
