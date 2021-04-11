@@ -4,6 +4,7 @@ import {LandingPage} from "./components/landing.js";
 import {NavigationMenu} from "./components/navigation.js";
 import {Contacts} from "./components/contact.js";
 import {AboutMe} from "./components/aboutme.js";
+import * as projects from "./components/projectpages.js";
 import './css/App.css';
 
 function App() {
@@ -12,9 +13,19 @@ function App() {
             <Router>
                 <NavigationMenu />
                 <Switch>
+                    {/*Main pages*/}
                     <Route path="/" exact component={LandingPage} />
                     <Route path="/get-in-touch" exact component={Contacts} />
                     <Route path="/about-me" exact component={AboutMe} />
+
+                    {/*Project Pages*/}
+                    <Route path="/its-time" exact component={projects.ItsTime} />
+                    <Route path="/caffeine-mono" exact component={projects.CaffeineMono} />
+                    <Route path="/take-back-your-phone" exact component={projects.TakeBackYourPhone} />
+                    <Route path="/difd-kiosk" exact component={projects.DIFDKiosk} />
+                    <Route path="/senior-exhibition" exact component={projects.SeniorExhibition} />
+
+                    {/*Not Found*/}
                     <Route component = {NotFound} />
                 </Switch>
             </Router>

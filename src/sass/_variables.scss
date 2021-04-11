@@ -33,6 +33,13 @@ $snap-ease: cubic-bezier(.5,.14,.39,.99);
     #{$prop}: $value;
 }
 
+@mixin gradient($color, $img-url, $direction: 'to right') {
+    background: linear-gradient(90deg, rgba($color,1) 0%, rgba($color,.9) 35%, rgba($color,.3) 100%), url($img-url);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 //Animations
 @keyframes typing {
   from {

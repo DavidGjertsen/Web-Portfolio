@@ -292,6 +292,61 @@
             }
         }
 
+        &.projectHeader {
+            text-align: left;
+            color: vars.$cream;
+
+            &.projectOne {
+                @include vars.gradient(vars.$chalkboard, "../images/itstime.png");
+            }
+
+            &.projectTwo {
+                @include vars.gradient(vars.$chalkboard, "../images/caffeinemono.png");
+            }
+
+            &.projectThree {
+                @include vars.gradient(vars.$chalkboard, "../images/takebackyourphone.png");
+            }
+
+            &.projectFour {
+                @include vars.gradient(vars.$chalkboard, "../images/difdkiosk.png");
+            }
+
+            &.projectFive {
+                @include vars.gradient(vars.$chalkboard, "../images/exhibition.gif");
+            }
+
+            .projectHeaderContent {
+                max-width: 1280px;
+                width: 100%;
+                padding: 24px;
+
+                h1 {
+                    margin-bottom: 36px;
+                    font-size: 5rem;
+                    max-width: 840px;
+                }
+
+                p {
+                    font-size: 2rem;
+                    max-width: 840px;
+                    margin-bottom: 36px;
+                }
+
+                ul {
+                    li {
+                        font-size: 1.25rem;
+                        display: inline-block;
+                        padding-right: 36px;
+
+                        &:first-of-type {
+                            padding-right: none;
+                        }
+                    }
+                }
+            }
+        }
+
         .aboutPage {
             width: (1280 / 1440) * 100%;
             max-width: 1280px;
@@ -324,7 +379,6 @@
                 text-align: left;
 
                 h2 {
-
                     margin-bottom: 36px;
                 }
 
