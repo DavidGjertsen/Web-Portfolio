@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import {LandingPage} from "./components/landing.js";
 import {NavigationMenu} from "./components/navigation.js";
 import {Contacts} from "./components/contact.js";
+import {AboutMe} from "./components/aboutme.js";
 import './css/App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
                 <Switch>
                     <Route path="/" exact component={LandingPage} />
                     <Route path="/get-in-touch" exact component={Contacts} />
+                    <Route path="/about-me" exact component={AboutMe} />
                     <Route component = {NotFound} />
                 </Switch>
             </Router>

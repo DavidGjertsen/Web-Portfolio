@@ -20,7 +20,7 @@ export const Contacts = () => {
 const Contact = (props) => {
     return(
         <div className="contact">
-            <p>{props.type + ": "}<a href={props.link} target={props.external ? "_blank" : ""}>{props.text ? props.text : props.link}</a></p>
+            <p>{props.type + ": "}<a href={props.link} target={props.external ? "_blank" : ""} rel="noreferrer">{props.text ? props.text : props.link}</a></p>
         </div>
     )
 }

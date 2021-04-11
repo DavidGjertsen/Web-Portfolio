@@ -243,7 +243,7 @@ a:hover {
   position: relative;
 }
 .container .panel .panelContent .panelText h2 {
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 .container .panel .panelContent .panelText p {
   margin-bottom: 16px;
@@ -303,7 +303,7 @@ a:hover {
   text-align: center;
 }
 .container .panel:last-of-type h2 {
-  margin-bottom: 56px;
+  margin-bottom: 36px;
 }
 .container .panel:last-of-type p {
   font-size: 1.25rem;
@@ -352,6 +352,44 @@ a:hover {
 .container .panel .contactPage h1 {
   margin-bottom: 36px;
   font-size: 3rem;
+}
+.container .panel .aboutPage {
+  width: 88.8888888889%;
+  max-width: 1280px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-row: repeat(1, 1fr);
+  grid-column-gap: 20px;
+}
+.container .panel .aboutPage img {
+  max-width: 100%;
+  max-height: 75%;
+  grid-column: 6/11;
+  grid-row: 1/-1;
+  margin: auto auto;
+  -webkit-filter: drop-shadow(0px 25px 50px rgba(38, 38, 38, 0.3));
+  filter: drop-shadow(0px 25px 50px rgba(38, 38, 38, 0.3));
+}
+.container .panel .aboutPage .panelText {
+  grid-column: 1/5;
+  margin: auto auto;
+  width: 100%;
+  position: relative;
+  text-align: left;
+}
+.container .panel .aboutPage .panelText h2 {
+  margin-bottom: 36px;
+}
+.container .panel .aboutPage .panelText p {
+  margin-bottom: 16px;
+}
+.container .panel .aboutPage .panelText a {
+  color: #262626;
+  font-weight: 500;
+}
+.container .panel .aboutPage .panelText a:hover {
+  color: #FFF9E3;
 }
 
 #copyright {

@@ -44,7 +44,7 @@ export const NavigationMenu = () => {
                     <li><NavLink className="navLink" to="/caffeine-mono" activeClassName="selected">Caffeine Mono</NavLink></li>
                     <li><NavLink className="navLink" to="/take-back-your-phone" activeClassName="selected">Take Back Your Phone</NavLink></li>
                     <li><NavLink className="navLink" to="/difd-kiosk" activeClassName="selected">DIFD Kiosk</NavLink></li>
-                    <li><NavLink className="navLink" to="/illustration" activeClassName="selected">Digital Illustration</NavLink></li>
+                    <li><NavLink className="navLink" to="/senior-exhibition" activeClassName="selected">2021 Senior Design Exhibition</NavLink></li>
                 </ul>
                 <li><NavLink className="navLink" to="/about-me" activeClassName="selected">About Me</NavLink></li>
                 <li><NavLink className="navLink" to="/get-in-touch" activeClassName="selected">Get in touch</NavLink></li>
