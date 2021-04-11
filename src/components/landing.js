@@ -63,7 +63,7 @@ export const LandingPage = () => {
                 alt="A countdown timer for the Winthrop Senior Show"
                 title="2021 Senior Design Exhibition"
                 text="A countdown to the most epic Winthrop University Senior Design Exhibition in history."
-                href="/senior-show-2021"/>
+                href="/senior-exhibition"/>
             <Footer />
         </div>
     )
