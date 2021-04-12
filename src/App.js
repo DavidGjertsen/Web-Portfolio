@@ -4,7 +4,9 @@ import {LandingPage} from "./components/landing.js";
 import {NavigationMenu} from "./components/navigation.js";
 import {Contacts} from "./components/contact.js";
 import {AboutMe} from "./components/aboutme.js";
-import * as projects from "./components/projectpages.js";
+import * as projects from "./components/projectHandler.js";
+
+
 import './css/App.css';
 
 function App() {
@@ -19,11 +21,11 @@ function App() {
                     <Route path="/about-me" exact component={AboutMe} />
 
                     {/*Project Pages*/}
-                    <Route path="/its-time" exact component={projects.ItsTime} />
-                    <Route path="/caffeine-mono" exact component={projects.CaffeineMono} />
-                    <Route path="/take-back-your-phone" exact component={projects.TakeBackYourPhone} />
-                    <Route path="/difd-kiosk" exact component={projects.DIFDKiosk} />
-                    <Route path="/senior-exhibition" exact component={projects.SeniorExhibition} />
+                    <Route path="/its-time" exact component={projects.ProjectOne} />
+                    <Route path="/caffeine-mono" exact component={projects.ProjectTwo} />
+                    <Route path="/take-back-your-phone" exact component={projects.ProjectThree} />
+                    <Route path="/difd-kiosk" exact component={projects.ProjectFour} />
+                    <Route path="/senior-exhibition" exact component={projects.ProjectFive} />
 
                     {/*Not Found*/}
                     <Route component = {NotFound} />

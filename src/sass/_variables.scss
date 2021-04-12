@@ -68,3 +68,25 @@ $snap-ease: cubic-bezier(.5,.14,.39,.99);
         bottom: 15px;
     }
 }
+
+@keyframes fadeInLeft {
+    from {
+        left: -100px;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
