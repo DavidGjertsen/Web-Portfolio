@@ -49,7 +49,7 @@ export const LandingPage = () => {
             <Project
                 image="images/landing/project-three.png"
                 alt="Phones showing the Take Back Your Phone app."
-                title="Take&nbsp;Back Your Phone"
+                title="Take Back Your&nbsp;Phone"
                 text="Hate spam callers? Here's a call filtering app with a vengeful twist."
                 href="/take-back-your-phone"/>
             <Project
@@ -61,7 +61,7 @@ export const LandingPage = () => {
             <Project
                 image="images/landing/project-five.png"
                 alt="A countdown timer for the Winthrop Senior Show"
-                title="2021 Senior Design Exhibition"
+                title="2021 Senior Design&nbsp;Exhibition"
                 text="A countdown to the most epic Winthrop University Senior Design Exhibition in history."
                 href="/senior-exhibition"/>
             <Footer />
