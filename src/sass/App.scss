@@ -177,12 +177,12 @@
                     position: relative;
                     font-size: 1.25rem;
                     text-align: center;
-                    animation: fadeInUp .75s vars.$snap-ease-out 1s both;
+                    animation: fadein .75s vars.$snap-ease-out 1s both;
                 }
 
                 p:nth-of-type(2) {
                     position: relative;
-                    animation: fadeInUp .75s vars.$snap-ease-out 2s both;
+                    animation: fadein .75s vars.$snap-ease-out 2s both;
                 }
 
                 img {
