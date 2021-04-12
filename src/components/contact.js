@@ -5,8 +5,6 @@ export const Contacts = () => {
         <div className="container">
             <section className="panel contact">
                 <section className="contactPage">
-                    <h1>Get in touch</h1>
-                    <p></p>
                     <div className="contacts">
                         <Contact type="Email" link="mailto:davidgjertsen8635@gmail.com" text="davidgjertsen8635@gmail.com"/>
                         <Contact type="Twitter" link="https://twitter.com/david_gjertsen" external text="@david_gjertsen" />

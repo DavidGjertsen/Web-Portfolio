@@ -4,7 +4,6 @@ export const AboutMe = () => {
             <section className="panel altColor">
                 <section className="aboutPage">
                     <div className="panelText">
-                        <h2>About me</h2>
                         <p>Hi, I'm David. I'm a queer front-end web developer and digital creator currently located in Rock Hill, South Carolina. I'm very good at making web applications that look good and work well.</p>
                         <p>I will graduate from Winthrop University in May 2021 with a degree in Digital Information Design (DIFD), and a concentration in Interactive Media.</p>
                         <p>I tend towards React and Sass for building websites, but I always enjoy the opportunity to learn something new and exciting.</p>

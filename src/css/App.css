@@ -384,7 +384,7 @@ a:hover {
 .container .panel.contact {
   background-color: #E47525;
   color: #262626;
-  text-align: center;
+  text-align: left;
   font-size: 1.125rem;
 }
 .container .panel.contact a {
