@@ -322,13 +322,13 @@
                 max-width: 1280px;
                 width: 100%;
                 padding: 24px;
-                position: relative;
-                animation: fadeInLeft 1s vars.$snap-ease-out .5s both;
 
                 h1 {
                     margin-bottom: 36px;
                     font-size: 5rem;
                     max-width: 840px;
+                    position: relative;
+                    animation: fadeInRight 1s vars.$snap-ease-out .5s both;
                 }
 
                 p {
@@ -339,7 +339,7 @@
 
                 ul {
                     position: relative;
-                    animation: fadeInUp 1s vars.$snap-ease-out 1s both;
+                    animation: fadeInRight 1s vars.$snap-ease-out 1s both;
 
                     li {
                         font-size: 1.25rem;

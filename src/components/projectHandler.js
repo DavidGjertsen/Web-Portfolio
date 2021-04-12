@@ -26,7 +26,7 @@ export const ProjectOne = () => {
 
 //Caffeine Mono
 export const ProjectTwo = () => {
-    const skills = ["Typography", "Ligature Design", "Creative Direction"];
+    const skills = ["Typography", "Functionality", "Creative Direction"];
     const color = "coffee";
 
     return(
@@ -57,7 +57,7 @@ export const ProjectThree = () => {
         <div className = "container">
             <ProjectHeader
                 color={color + " projectThree"}
-                title="Take Back Your Phone"
+                title="Take Back Your&nbsp;Phone"
                 intro="Hate spam callers? Here's a call filtering app with a vengeful twist."
                 skills={skills}
             />
@@ -90,7 +90,7 @@ export const ProjectFour = () => {
                 color={color}
                 text={[
                     "The Digital Information Design program at Winthrop University features four concentrations: Digital Commerce, Interactive Media, Web Application Development, and Digital Mass Media.",
-                    "What was my first thought when I was asked to design an informational kiosk for the department? \"Character classes.\""
+                    "What was my first thought when I was asked to design an informational kiosk for the program? \"Character classes.\""
                 ]}
             />
         </div>
@@ -106,7 +106,7 @@ export const ProjectFive = () => {
         <div className = "container">
             <ProjectHeader
                 color={color + " projectFive"}
-                title="2021 Senior Design Exhibition"
+                title="2021 Senior Design&nbsp;Exhibition"
                 intro="A countdown to the most epic Senior Design Exhibition in Winthrop University history."
                 skills={skills}
             />

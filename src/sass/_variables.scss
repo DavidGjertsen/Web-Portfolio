@@ -80,13 +80,13 @@ $snap-ease: cubic-bezier(.5,.14,.39,.99);
     }
 }
 
-@keyframes fadeInUp {
+@keyframes fadeInRight {
     from {
-        bottom: -100px;
+        right: -100px;
         opacity: 0;
     }
     to {
-        bottom: 0;
+        right: 0;
         opacity: 1;
     }
 }
