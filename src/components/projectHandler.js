@@ -66,7 +66,7 @@ export const ProjectThree = () => {
                 text={[
                     "I hate spam calls. ",
                     "Did you know that in 2018 there were 47.8 billion spam calls in the United States? That's 90 irritating and pointless spam calls every minute!",
-                    "Take Back Your Phone is a conceptual call filtering app that would allow the average Joe to get revenge on spam callers. How? By rerouting spam calls to other spammers and giving them a taste of their own medicine. It's about time we took back our phones."
+                    "Take Back Your Phone is a call filtering app concept that would allow the average Joe to get revenge on spam callers. How? By rerouting spam calls to other spammers and giving them a taste of their own medicine. It's about time we took back our phones."
                 ]}
             />
         </div>
