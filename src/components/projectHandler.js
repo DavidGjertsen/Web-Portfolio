@@ -1,4 +1,4 @@
-import {ProjectHeader, ProjectDescription} from "./projectComponents.js";
+import {ProjectHeader, ProjectDescription, ProjectImage, ProjectText, ProjectFin} from "./projectComponents.js";
 
 //It's Time
 export const ProjectOne = () => {
@@ -6,13 +6,15 @@ export const ProjectOne = () => {
     const color = "teal";
 
     return(
-        <div className = "container">
+        <div className = "container" id="top">
+
             <ProjectHeader
                 color={color + " projectOne"}
                 title="It's Time"
                 intro="A work tracking app to ensure workers are doing what needs to be done."
                 skills={skills}
             />
+
             <ProjectDescription
                 color={color}
                 text={[
@@ -20,6 +22,68 @@ export const ProjectOne = () => {
                     "With an easy-to-use interface and task editing to help forgetful employees keep their time sheets accurate, It's Time makes it easy for your employees to report exactly what they are working on, and for how long."
                 ]}
             />
+
+            <section className={"panel projectPanel " + color}>
+                <ProjectImage
+                    src="/images/projects/itstime/Frame 6.png"
+                    alt="Landing page for It's Time, with a clean UI and a prominent Start button"
+                />
+                <ProjectText
+                    text={[
+                        "A clean and simple UI ensures that your employees will easily be able to navigate the app. It only takes seconds to start and stop tracking a task, meaning your workers stay focused on what's most important."
+                    ]}
+                />
+                <ProjectImage
+                    src="/images/projects/itstime/Frame 4.png"
+                    alt="Selecting from a list of preset tasks"
+                />
+                <ProjectText
+                    text={[
+                        "Create a list of predefined tasks for your workers to choose from, or allow them to create their own tasks.",
+                        "The app keeps track of time even if the app is closed or their phone is turned off."
+                    ]}
+                />
+                <ProjectImage
+                    src="/images/projects/itstime/Frame 5.png"
+                    alt="The history panel, where workers and employers can see work history"
+                />
+                <ProjectText
+                    text={[
+                        "You and your employees can easily keep track of completed work in the history panel.",
+                        "Have a forgetful employee? With the task editor, you and your employees can fix mistakes to ensure that their work history is as accurate as possible."
+                    ]}
+                />
+            </section>
+
+            <ProjectDescription
+                color={color}
+                text={[
+                    "This was a partner project. I took care of the design, and my boyfriend and fellow web programmer Mason Spitz and I worked together on development.",
+                    "Below are some of the early concepts that I designed."
+                ]}
+            />
+
+            <section className={"panel projectPanel " + color}>
+                <ProjectImage
+                    src="/images/projects/itstime/Frame 7.png"
+                    alt="Early concept work for Timely, which eventually became It's Time"
+                />
+                <ProjectImage
+                    src="/images/projects/itstime/Kit of Parts.png"
+                    alt="A kit of parts for Timely"
+                />
+            </section>
+
+            <ProjectDescription
+                color={color}
+                text={[
+                    "Many aspects of the original concepts worked their way into the final version, including the neumorphic UI, as well as colors and fonts. However, the final project was simplified to better meet the project requirements and to allow us to meet the deadline.",
+                    "It's Time was a unique project that I am proud of."
+                ]}
+            />
+
+            <ProjectFin />
+
         </div>
     )
 }

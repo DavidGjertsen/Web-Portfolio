@@ -14,7 +14,7 @@
         width: 100vw;
         height: 100vh;
         position: fixed;
-        background-color: rgba(vars.$chalkboard, 0.75);
+        background-color: rgba(darken(vars.$chalkboard, 10), 0.75);
         z-index: 98;
         opacity: 0;
         pointer-events: none;
@@ -30,7 +30,7 @@
     .mainNav {
         position: fixed;
         top: 0;
-        right: -20%;
+        right: -300px;
         width: 20%;
         max-width: 300px;
         min-width: 260px;
@@ -58,9 +58,14 @@
             }
         }
 
+        li {
+            line-height: 1;
+            margin-bottom: 0;
+        }
+
         .subNav {
             li {
-                margin-left: 12px;
+                margin-left: 36px;
                 font-size: .9rem;
             }
         }
@@ -70,7 +75,7 @@
 .container {
     height: 100vh;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     -ms-overflow-style: none;
     scrollbar-width: none;
 
@@ -80,7 +85,7 @@
 
     .panel {
         scroll-snap-align: start;
-        scroll-snap-stop: always;
+        //scroll-snap-stop: always;
         height: 100vh;
         background-color: vars.$mint-tea;
 
@@ -300,22 +305,27 @@
 
             &.projectOne {
                 @include vars.gradient(vars.$mint-tea, "../images/itstime.png");
+                //color: vars.$cream;
             }
 
             &.projectTwo {
                 @include vars.gradient(vars.$coffee, "../images/caffeinemono.png");
+                //color: vars.$cream;
             }
 
             &.projectThree {
                 @include vars.gradient(vars.$mint-tea, "../images/takebackyourphone.png");
+                //color: vars.$cream;
             }
 
             &.projectFour {
                 @include vars.gradient(vars.$coffee, "../images/difdkiosk.png");
+                //color: vars.$cream;
             }
 
             &.projectFive {
                 @include vars.gradient(vars.$mint-tea, "../images/exhibition.gif");
+                //color: vars.$cream;
             }
 
             .projectHeaderContent {
@@ -371,6 +381,53 @@
             }
         }
 
+        &.projectPanel {
+            height: unset;
+            min-height: 100vh;
+            overflow: visible;
+
+            &.teal {
+                background-color: vars.$mint-tea;
+                color: vars.$chalkboard;
+            }
+
+            &.coffee {
+                background-color: vars.$coffee;
+                color: vars.$chalkboard;
+            }
+
+            .projectInfo {
+                display: flex;
+                flex-direction: column;
+                padding: 24px 12px;
+
+
+                img {
+                    max-width: 100%;
+                    width: unset;
+                    max-height: 100vh;
+                    @include vars.autoprefix(filter, drop-shadow(0px 25px 50px rgba(vars.$chalkboard, .3)), webkit);
+                }
+
+                p {
+                    max-width: 840px;
+                }
+            }
+        }
+
+        &.about {
+            min-height: 100vh;
+            height: unset;
+            overflow: scroll;
+
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
         .aboutPage {
             width: (1280 / 1440) * 100%;
             max-width: 1280px;
@@ -408,6 +465,10 @@
 
                 p {
                     margin-bottom: 16px;
+                }
+
+                #achievementsList {
+                    margin-top: 48px;
                 }
 
                 a {

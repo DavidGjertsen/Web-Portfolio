@@ -17,6 +17,16 @@ p {
     margin-bottom: .75rem;
 }
 
+ul {
+    list-style: disc;
+
+    li {
+        line-height: 1.3125;
+        margin-bottom: .25rem;
+        margin-left: 1rem;
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     @include vars.homemade-apple;
     text-transform: lowercase;

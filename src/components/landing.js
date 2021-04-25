@@ -31,6 +31,7 @@ export const LandingPage = () => {
 
     });
 
+    //Talk about interaction design & interfce design
     return(
         <div className="container">
             <PageHeader />
@@ -88,8 +89,8 @@ const PageHeader = () => {
         <section className="panel header">
             <div className="pageHeaderContent">
                 <h1>David Gjertsen</h1>
-                <p>I am a front-end web developer and digital creator.</p>
-                <p>I'm good at making things pretty. Have a look.</p>
+                <p>I'm a front-end web designer and developer.</p>
+                <p>I make stuff that looks good and works well.</p>
                 <img
                     id="scrollPrompt"
                     src="images/icons/arrow-down.svg"

@@ -113,6 +113,15 @@ p {
   margin-bottom: 0.75rem;
 }
 
+ul {
+  list-style: disc;
+}
+ul li {
+  line-height: 1.3125;
+  margin-bottom: 0.25rem;
+  margin-left: 1rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Homemade Apple", serif;
   text-transform: lowercase;
@@ -174,7 +183,7 @@ a:hover {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-color: rgba(38, 38, 38, 0.75);
+  background-color: rgba(13, 13, 13, 0.75);
   z-index: 98;
   opacity: 0;
   pointer-events: none;
@@ -188,7 +197,7 @@ a:hover {
 .navigation .mainNav {
   position: fixed;
   top: 0;
-  right: -20%;
+  right: -300px;
   width: 20%;
   max-width: 300px;
   min-width: 260px;
@@ -212,15 +221,19 @@ a:hover {
 .navigation .mainNav a.selected {
   color: #E47525;
 }
+.navigation .mainNav li {
+  line-height: 1;
+  margin-bottom: 0;
+}
 .navigation .mainNav .subNav li {
-  margin-left: 12px;
+  margin-left: 36px;
   font-size: 0.9rem;
 }
 
 .container {
   height: 100vh;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -229,7 +242,6 @@ a:hover {
 }
 .container .panel {
   scroll-snap-align: start;
-  scroll-snap-stop: always;
   height: 100vh;
   background-color: #63DACC;
   display: flex;
@@ -472,6 +484,44 @@ a:hover {
   max-width: 840px;
   padding: 24px;
 }
+.container .panel.projectPanel {
+  height: unset;
+  min-height: 100vh;
+  overflow: visible;
+}
+.container .panel.projectPanel.teal {
+  background-color: #63DACC;
+  color: #262626;
+}
+.container .panel.projectPanel.coffee {
+  background-color: #E47525;
+  color: #262626;
+}
+.container .panel.projectPanel .projectInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 12px;
+}
+.container .panel.projectPanel .projectInfo img {
+  max-width: 100%;
+  width: unset;
+  max-height: 100vh;
+  -webkit-filter: drop-shadow(0px 25px 50px rgba(38, 38, 38, 0.3));
+  filter: drop-shadow(0px 25px 50px rgba(38, 38, 38, 0.3));
+}
+.container .panel.projectPanel .projectInfo p {
+  max-width: 840px;
+}
+.container .panel.about {
+  min-height: 100vh;
+  height: unset;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.container .panel.about::-webkit-scrollbar {
+  display: none;
+}
 .container .panel .aboutPage {
   width: 88.8888888889%;
   max-width: 1280px;
@@ -502,6 +552,9 @@ a:hover {
 }
 .container .panel .aboutPage .panelText p {
   margin-bottom: 16px;
+}
+.container .panel .aboutPage .panelText #achievementsList {
+  margin-top: 48px;
 }
 .container .panel .aboutPage .panelText a {
   color: #262626;

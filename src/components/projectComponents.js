@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export const ProjectHeader = (props) => {
     return(
         <section className={"panel projectHeader " + props.color}>
@@ -22,6 +24,34 @@ export const ProjectDescription = (props) => {
                 {props.text.map((text, key) => {
                     return (<p key={key}>{text}</p>);
                 })}
+            </div>
+        </section>
+    )
+}
+
+export const ProjectImage = (props) => {
+    return(
+        <div className="projectInfo">
+            <img src={props.src} alt={props.alt} />
+        </div>
+    )
+}
+
+export const ProjectText = (props) => {
+    return(
+        <div className="projectInfo">
+            {props.text.map((text, key) => {
+                return (<p key={key}>{text}</p>);
+            })}
+        </div>
+    )
+}
+
+export const ProjectFin = () => {
+    return(
+        <section className="panel footer">
+            <div className="footerContent">
+                <h2>fin</h2>
             </div>
         </section>
     )
