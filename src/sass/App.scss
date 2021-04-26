@@ -370,6 +370,16 @@
                     }
                 }
             }
+            #scrollPrompt {
+                position: absolute;
+                bottom: 25px;
+                //right: calc(50vw - 50%);
+                animation: .5s vars.$snap-ease 0s infinite alternate both bounce, fadein .5s vars.$snap-ease 5s both;
+
+                &.hidden {
+                    display: none;
+                }
+            }
         }
 
         &.projectDescription {

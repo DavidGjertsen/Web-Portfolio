@@ -479,6 +479,14 @@ a:hover {
 .container .panel.projectHeader .projectHeaderContent ul li:first-of-type {
   padding-right: none;
 }
+.container .panel.projectHeader #scrollPrompt {
+  position: absolute;
+  bottom: 25px;
+  animation: 0.5s cubic-bezier(0.5, 0.14, 0.39, 0.99) 0s infinite alternate both bounce, fadein 0.5s cubic-bezier(0.5, 0.14, 0.39, 0.99) 5s both;
+}
+.container .panel.projectHeader #scrollPrompt.hidden {
+  display: none;
+}
 .container .panel.projectDescription a {
   color: #262626;
 }

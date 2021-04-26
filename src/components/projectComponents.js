@@ -1,6 +1,20 @@
 import {Link} from "react-router-dom";
+import {useState, useEffect} from "react";
 
 export const ProjectHeader = (props) => {
+    const [active, setActive] = useState(true);
+
+    useEffect(() => {
+        const onScroll = () => {
+            setActive(false);
+        }
+
+        document.getElementsByClassName("container")[0].addEventListener("scroll", onScroll);
+
+        return function cleanup() {
+            document.getElementsByClassName("container")[0].removeEventListener("scroll", onScroll);
+        }
+    });
     return(
         <section className={"panel projectHeader " + props.color}>
             <div className = "projectHeaderContent">
@@ -13,6 +27,12 @@ export const ProjectHeader = (props) => {
                     })}
                 </ul>
             </div>
+            <img
+                id="scrollPrompt"
+                src="images/icons/arrow-down-dark.svg"
+                alt="Scroll down for more"
+                className={active ? "visible" : "hidden"}
+            />
         </section>
     )
 }
