@@ -1,4 +1,4 @@
-import {ProjectHeader, ProjectDescription, ProjectImage, ProjectText, ProjectFin} from "./projectComponents.js";
+import {ProjectHeader, ProjectDescription, ProjectImage, ProjectText, ProjectFin, CMProjectLink, LiveDemo, ExhibitionLink} from "./projectComponents.js";
 
 //It's Time
 export const ProjectOne = () => {
@@ -58,7 +58,7 @@ export const ProjectOne = () => {
             <ProjectDescription
                 color={color}
                 text={[
-                    "This was a partner project. I took care of the design, and my boyfriend and fellow web programmer Mason Spitz and I worked together on development.",
+                    "This was a partner project. I took care of the majority of the design, and my boyfriend and fellow web programmer Mason Spitz and I worked together to develop the app.",
                     "Below are some of the early concepts that I designed."
                 ]}
             />
@@ -78,7 +78,6 @@ export const ProjectOne = () => {
                 color={color}
                 text={[
                     "Many aspects of the original concepts worked their way into the final version, including the neumorphic UI, as well as colors and fonts. However, the final project was simplified to better meet the project requirements and to allow us to meet the deadline.",
-                    "It's Time was a unique project that I am proud of."
                 ]}
             />
 
@@ -104,10 +103,26 @@ export const ProjectTwo = () => {
             <ProjectDescription
                 color={color}
                 text={[
-                    "As a programmer, sometimes coding fonts just don't look all that nice.",
-                    "Meet Caffeine Mono, a typeface combines the functionality of modern programming fonts with a playful and aesthetically pleasing design. It features over 30 useful ligatures to beautify your code."
+                    "At the end of the day, not every programming font is great. Some are functional but ugly. Some are pretty but hard to use. It's a mess.",
+                    "Meet Caffeine Mono, a typeface combines the functionality of modern programming fonts with a playful and aesthetically pleasing design. It is carefully designed to avoid pitfalls common among other programming fonts, and features over 30 useful ligatures to beautify your code."
                 ]}
             />
+            <section className={"panel projectPanel " + color}>
+                <ProjectImage
+                    src="images/projects/caffeinemono/font.png"
+                    alt="Caffeine Mono: Aesthetic for programmers"
+                />
+                <ProjectImage
+                    src="images/projects/caffeinemono/special.png"
+                    alt="A comparison of similar glyphs and an experimental ligature for multiline comments"
+                />
+                <ProjectImage
+                    src="images/projects/caffeinemono/code_example.png"
+                    alt="Caffeine mono being used to display React JSX."
+                />
+            </section>
+            <CMProjectLink color={color}/>
+            <ProjectFin />
         </div>
     )
 }
@@ -133,6 +148,30 @@ export const ProjectThree = () => {
                     "Take Back Your Phone is a call filtering app concept that would allow the average Joe to get revenge on spam callers. How? By rerouting spam calls to other spammers and giving them a taste of their own medicine. It's about time we took back our phones."
                 ]}
             />
+            <section className={"panel projectPanel " + color}>
+                <ProjectImage
+                    src="images/projects/tbyp/callers.png"
+                    alt="A phone with a regular caller and a phone with a spam caller"
+                />
+                <ProjectText
+                    text={[
+                        "Take Back Your Phone takes over when you recieve a call, does some magical checking in the background, and gives you a heads up if it thinks a call might be spam, which is where the fun begins.",
+                        "When a spam call is detected, all you have to do is press the big red \"Vengeance\" button, and listen to the fireworks while the spam caller is rerouted to another spammer elsewhere.",
+                    ]}
+                />
+                <ProjectImage
+                    src="images/projects/tbyp/slam.png"
+                    alt="A spammer getting slammed on the left, and the app settings on the right."
+                />
+            </section>
+            <ProjectDescription
+                color={color}
+                text={[
+                    "Revenge is sweet.",
+                    "This is by far my most popular project, and everyone I've ever talked to about it wishes it were real (though no one more than I!). Perhaps someday..."
+                ]}
+            />
+            <ProjectFin />
         </div>
     )
 }
@@ -157,6 +196,36 @@ export const ProjectFour = () => {
                     "What was my first thought when I was asked to design an informational kiosk for the program? \"Character classes.\""
                 ]}
             />
+            <section className={"panel projectPanel " + color}>
+                <ProjectImage
+                    src="images/projects/kiosk/page_one.jpg"
+                    alt="Prepare to start your adventure"
+                />
+                <ProjectImage
+                    src="images/projects/kiosk/page_two.jpg"
+                    alt="Choose from one of four character classes"
+                />
+                <ProjectImage
+                    src="images/projects/kiosk/page_three.jpg"
+                    alt="For example, the Interactive Media class, with high level in Design"
+                />
+                <ProjectImage
+                    src="images/projects/kiosk/page_four.jpg"
+                    alt="Take on the Final Boss: Capstone"
+                />
+                <ProjectImage
+                    src="images/projects/kiosk/page_five.jpg"
+                    alt="Your journey is complete, but there are more adventures to be had with Digital Information Design"
+                />
+            </section>
+            <ProjectDescription
+                color={color}
+                text={[
+                    "This project is my favorite. It is the perfect combination of my skill as a designer, my abilities as an artist, and my experience as a programmer.",
+                    "Pixel art is just plain cool."
+                ]}
+            />
+            <ProjectFin />
         </div>
     )
 }
@@ -170,17 +239,27 @@ export const ProjectFive = () => {
         <div className = "container">
             <ProjectHeader
                 color={color + " projectFive"}
-                title="2021 Senior Design&nbsp;Exhibition"
+                title="2021 Senior Design&nbsp;Exhibition Countdown"
                 intro="A countdown to the most epic Senior Design Exhibition in Winthrop University history."
                 skills={skills}
             />
             <ProjectDescription
                 color={color}
                 text={[
-                    "The 2020-2021 school year was... let's just say \"interesting.\" But is that going to stop us from putting on an absolutely epic senior exhibition?",
-                    "I don't think so."
+                    "The 2020-2021 school year was... \"interesting\" for reasons that are probably obvious. But is a once-in-a-century global pandemic going to stop the Winthrop University seniors from putting on an absolutely epic design exhibition?",
+                    "Not in a million years."
                 ]}
             />
+            <section className={"panel projectPanel " + color}>
+            <ProjectImage
+                src="images/projects/exhibition/exhibition.gif"
+                alt="The famed countdown to May 3rd"
+            />
+            </section>
+            <ExhibitionLink
+                color={color}
+            />
+            <ProjectFin />
         </div>
 
     )

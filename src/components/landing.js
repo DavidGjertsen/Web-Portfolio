@@ -62,7 +62,7 @@ export const LandingPage = () => {
             <Project
                 image="images/landing/project-five.png"
                 alt="A countdown timer for the Winthrop Senior Show"
-                title="2021 Senior Design&nbsp;Exhibition"
+                title="2021 Senior Design&nbsp;Exhibition Countdown"
                 text="A countdown to the most epic Winthrop University Senior Design Exhibition in history."
                 href="/senior-exhibition"/>
             <Footer />
