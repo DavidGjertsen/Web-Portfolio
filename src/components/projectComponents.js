@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+
 import {useState, useEffect} from "react";
 
 export const ProjectHeader = (props) => {
@@ -63,8 +63,7 @@ export const ExhibitionLink = (props) => {
     return(
         <section className={"panel projectDescription " + props.color}>
             <div className="projectDescriptionContent">
-                <p>The countdown is currently live and can be found <a href="https://winthropseniorshow.com/" target="_blank" rel="noreferrer">here</a>.</p>
-                <p>The 2021 Winthrop Senior Design Exhibition launches on May 3rd, 2021. You should check it out, it's gonna be epic.</p>
+                <p>The 2021 senior exhibition can be found <a href="https://winthropseniorshow.com/" target="_blank" rel="noreferrer">here</a>. The website was designed and built by myself, <a href="https://www.danimalphrus.com/" target="_blank" rel="noreferrer">Danielle Malphrus</a>, and <a href="https://jaiquezwork.webflow.io/" target="_blank" rel="noreferrer">Jaiquez Hagood</a>.</p>
             </div>
         </section>
     )
@@ -101,7 +100,7 @@ export const ProjectFin = () => {
 export const LiveDemo = (props) => {
     return(
         <div className="projectInfo">
-            <iframe src="difd_kiosk/index.html" />
+            <iframe title="Kiosk demo" src="difd_kiosk/index.html" />
         </div>
     )
 }

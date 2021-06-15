@@ -8,10 +8,6 @@ export const NavigationMenu = () => {
         setActive(!active);
     }
 
-    function toggleActiveOnClick() {
-        setTimeout(toggleActive, 300);
-    }
-
     useEffect(() => {
         document.getElementById("menuButton").addEventListener("click", toggleActive);
         document.querySelector(".navfade").addEventListener("click", toggleActive);
@@ -45,7 +41,7 @@ export const NavigationMenu = () => {
                     <li><NavLink className="navLink" to="/caffeine-mono" activeClassName="selected">Caffeine Mono</NavLink></li>
                     <li><NavLink className="navLink" to="/take-back-your-phone" activeClassName="selected">Take Back Your Phone</NavLink></li>
                     <li><NavLink className="navLink" to="/difd-kiosk" activeClassName="selected">DIFD Kiosk</NavLink></li>
-                    <li><NavLink className="navLink" to="/senior-exhibition" activeClassName="selected">2021 Senior Design&nbsp;Exhibition Countdown</NavLink></li>
+                    <li><NavLink className="navLink" to="/senior-exhibition" activeClassName="selected">2021 Senior Design&nbsp;Exhibition</NavLink></li>
                 </ul>
                 <li><NavLink className="navLink" to="/about-me" activeClassName="selected">About Me</NavLink></li>
                 <li><NavLink className="navLink" to="/get-in-touch" activeClassName="selected">Get in touch</NavLink></li>

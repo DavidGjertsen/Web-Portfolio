@@ -91,6 +91,7 @@
     }
 
     .panel {
+        padding: 0px 12px;
         scroll-snap-align: start;
         //scroll-snap-stop: always;
         height: 100vh;
@@ -545,4 +546,117 @@
     //&.hidden {
         //opacity: 0;
     //}
+}
+
+
+@media screen and (max-width: 800px) {
+    body {
+        .navigation {
+            #menuButton {
+                position: fixed;
+                top: 15px;
+                right: 15px;
+                z-index: 100;
+            }
+
+            #shadow {
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 99;
+            }
+        }
+
+        .container {
+
+            .panel {
+                &.header .pageHeaderContent {
+                    h1 {
+                        font-size: 42px;
+                    }
+                    p {
+                        font-size: 16px !important;
+                    }
+                }
+
+                .panelContent {
+                    display: flex;
+
+                    h2 {
+                        font-size: 2rem;
+                    }
+
+                    p, a {
+                        font-size: 16px !important;
+                    }
+
+                    img {
+                        display: none;
+                    }
+                }
+
+                &.footer .footerContent {
+                    h2 {
+                        font-size: 2rem;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                    a {
+                        font-size: 16px;
+                    }
+                }
+
+                //About Me
+                &.about {
+                    .aboutPage {
+                        padding: 60px 0;
+                        display: flex;
+                        flex-direction: column;
+                        height: auto;
+
+                        .panelText p {
+                            font-size: 16px !important;
+                        }
+
+                        img {
+                            margin-top: 36px;
+                        }
+                    }
+                }
+
+                //PROJECTS
+                &.projectHeader .projectHeaderContent {
+                    h1 {
+                        font-size: 2rem !important;
+                    }
+                    ul {
+                        li {
+                            display: block;
+                            font-size: 16px;
+                            padding-bottom: 12px;
+                        }
+                    }
+                }
+
+                &.projectDescription, &.projectPanel {
+                    font-size: 16px;
+                }
+
+                &.contact .contactPage .contacts .contact {
+                    p {
+                        a {
+                            display: block;
+                        }
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    #copyright {
+        bottom: 15px;
+        left: 15px;
+    }
 }

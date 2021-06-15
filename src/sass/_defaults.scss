@@ -11,6 +11,10 @@ html {
     overflow: hidden;
 }
 
+body {
+    min-width: 360px;
+}
+
 p {
     //font-size: 1.125rem;
     line-height: 1.3125;

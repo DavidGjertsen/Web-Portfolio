@@ -108,6 +108,10 @@ html {
   overflow: hidden;
 }
 
+body {
+  min-width: 360px;
+}
+
 p {
   line-height: 1.3125;
   margin-bottom: 0.75rem;
@@ -247,6 +251,7 @@ a:hover {
   display: none;
 }
 .container .panel {
+  padding: 0px 12px;
   scroll-snap-align: start;
   height: 100vh;
   background-color: #63DACC;
@@ -425,11 +430,27 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 800px) {
+  .container .panel.projectHeader.projectOne {
+    background: linear-gradient(0deg, #63dacc 0%, rgba(99, 218, 204, 0.9) 35%, rgba(99, 218, 204, 0.3) 100%), url("../images/itstime.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 .container .panel.projectHeader.projectTwo {
   background: linear-gradient(90deg, #e47525 0%, rgba(228, 117, 37, 0.9) 35%, rgba(228, 117, 37, 0.3) 100%), url("../images/caffeinemono.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 800px) {
+  .container .panel.projectHeader.projectTwo {
+    background: linear-gradient(0deg, #e47525 0%, rgba(228, 117, 37, 0.9) 35%, rgba(228, 117, 37, 0.3) 100%), url("../images/caffeinemono.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 .container .panel.projectHeader.projectThree {
   background: linear-gradient(90deg, #63dacc 0%, rgba(99, 218, 204, 0.9) 35%, rgba(99, 218, 204, 0.3) 100%), url("../images/takebackyourphone.png");
@@ -437,17 +458,41 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 800px) {
+  .container .panel.projectHeader.projectThree {
+    background: linear-gradient(0deg, #63dacc 0%, rgba(99, 218, 204, 0.9) 35%, rgba(99, 218, 204, 0.3) 100%), url("../images/takebackyourphone.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 .container .panel.projectHeader.projectFour {
   background: linear-gradient(90deg, #e47525 0%, rgba(228, 117, 37, 0.9) 35%, rgba(228, 117, 37, 0.3) 100%), url("../images/difdkiosk.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 800px) {
+  .container .panel.projectHeader.projectFour {
+    background: linear-gradient(0deg, #e47525 0%, rgba(228, 117, 37, 0.9) 35%, rgba(228, 117, 37, 0.3) 100%), url("../images/difdkiosk.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 .container .panel.projectHeader.projectFive {
   background: linear-gradient(90deg, #63dacc 0%, rgba(99, 218, 204, 0.9) 35%, rgba(99, 218, 204, 0.3) 100%), url("../images/exhibition.gif");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 800px) {
+  .container .panel.projectHeader.projectFive {
+    background: linear-gradient(0deg, #63dacc 0%, rgba(99, 218, 204, 0.9) 35%, rgba(99, 218, 204, 0.3) 100%), url("../images/exhibition.gif");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 .container .panel.projectHeader .projectHeaderContent {
   max-width: 1280px;
@@ -610,6 +655,82 @@ a:hover {
   margin: 0;
   line-height: 1;
   z-index: 105;
+}
+
+@media screen and (max-width: 800px) {
+  body .navigation #menuButton {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 100;
+  }
+  body .navigation #shadow {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  body .container .panel.header .pageHeaderContent h1 {
+    font-size: 42px;
+  }
+  body .container .panel.header .pageHeaderContent p {
+    font-size: 16px !important;
+  }
+  body .container .panel .panelContent {
+    display: flex;
+  }
+  body .container .panel .panelContent h2 {
+    font-size: 2rem;
+  }
+  body .container .panel .panelContent p, body .container .panel .panelContent a {
+    font-size: 16px !important;
+  }
+  body .container .panel .panelContent img {
+    display: none;
+  }
+  body .container .panel.footer .footerContent h2 {
+    font-size: 2rem;
+  }
+  body .container .panel.footer .footerContent p {
+    font-size: 16px;
+  }
+  body .container .panel.footer .footerContent a {
+    font-size: 16px;
+  }
+  body .container .panel.about .aboutPage {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  body .container .panel.about .aboutPage .panelText p {
+    font-size: 16px !important;
+  }
+  body .container .panel.about .aboutPage img {
+    margin-top: 36px;
+  }
+  body .container .panel.projectHeader .projectHeaderContent h1 {
+    font-size: 2rem !important;
+  }
+  body .container .panel.projectHeader .projectHeaderContent ul li {
+    display: block;
+    font-size: 16px;
+    padding-bottom: 12px;
+  }
+  body .container .panel.projectDescription, body .container .panel.projectPanel {
+    font-size: 16px;
+  }
+  body .container .panel.contact .contactPage .contacts .contact p {
+    font-size: 16px;
+  }
+  body .container .panel.contact .contactPage .contacts .contact p a {
+    display: block;
+  }
+
+  #copyright {
+    bottom: 15px;
+    left: 15px;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

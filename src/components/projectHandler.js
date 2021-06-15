@@ -1,4 +1,4 @@
-import {ProjectHeader, ProjectDescription, ProjectImage, ProjectText, ProjectFin, CMProjectLink, LiveDemo, ExhibitionLink} from "./projectComponents.js";
+import {ProjectHeader, ProjectDescription, ProjectImage, ProjectText, ProjectFin, CMProjectLink, ExhibitionLink} from "./projectComponents.js";
 
 //It's Time
 export const ProjectOne = () => {
@@ -239,14 +239,14 @@ export const ProjectFive = () => {
         <div className = "container">
             <ProjectHeader
                 color={color + " projectFive"}
-                title="2021 Senior Design&nbsp;Exhibition Countdown"
-                intro="A countdown to the most epic Senior Design Exhibition in Winthrop University history."
+                title="2021 Senior Design&nbsp;Exhibition"
+                intro="The most epic Senior Design Exhibition in Winthrop University history."
                 skills={skills}
             />
             <ProjectDescription
                 color={color}
                 text={[
-                    "The 2020-2021 school year was... \"interesting\" for reasons that are probably obvious. But is a once-in-a-century global pandemic going to stop the Winthrop University seniors from putting on an absolutely epic design exhibition?",
+                    "The 2020-2021 school year was challenging for obvious reasons. But is a once-in-a-century global pandemic going to stop the Winthrop University senior design class from putting on an absolutely epic exhibition?",
                     "Not in a million years."
                 ]}
             />

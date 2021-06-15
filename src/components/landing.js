@@ -62,9 +62,15 @@ export const LandingPage = () => {
             <Project
                 image="images/landing/project-five.png"
                 alt="A countdown timer for the Winthrop Senior Show"
-                title="2021 Senior Design&nbsp;Exhibition Countdown"
-                text="A countdown to the most epic Winthrop University Senior Design Exhibition in history."
+                title="2021 Senior Design&nbsp;Exhibition"
+                text="The most epic Winthrop University Senior Design Exhibition in history."
                 href="/senior-exhibition"/>
+            {/*<Project
+                image="images/landing/project-five.png"
+                alt="The login page for the helpdesk"
+                title="The Company Helpdesk"
+                text="Designed to help you find what you need."
+                href="/helpdesk"/> */}
             <Footer />
         </div>
     )
@@ -126,7 +132,6 @@ const Footer = () => {
                     <nav>
                         <Link to="/about-me">About me</Link>
                         <Link to="/get-in-touch">Get in touch</Link>
-                        <Link to="/blog">Read my blog</Link>
                     </nav>
                 </div>
             </div>
