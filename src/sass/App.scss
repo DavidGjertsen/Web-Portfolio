@@ -439,8 +439,6 @@
                 flex-direction: column;
                 padding: 24px 12px;
 
-
-
                 img {
                     max-width: 100%;
                     max-height: 85vh;
@@ -451,6 +449,23 @@
                     max-width: 840px;
                     text-align: left;
                     width: 100%;
+                }
+
+                figure {
+                    max-width: 1080px;
+                    width: 100%;
+                    //max-height: 85vh;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+
+                    figcaption {
+                        max-width: 840px;
+                        text-align: left;
+                        width: 100%;
+                        margin-top: 24px;
+                    }
+                    margin-bottom: 12px;
                 }
 
                 iframe {
@@ -615,7 +630,7 @@
                         flex-direction: column;
                         height: auto;
 
-                        .panelText p {
+                        .panelText p, .panelContent figcaption {
                             font-size: 16px !important;
                         }
 

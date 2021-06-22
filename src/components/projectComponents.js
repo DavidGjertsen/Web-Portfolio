@@ -77,6 +77,17 @@ export const ProjectImage = (props) => {
     )
 }
 
+export const ProjectImageWithCaption = (props) => {
+    return(
+        <div className="projectInfo">
+            <figure>
+                <img src={props.src} alt={props.alt} />
+                <figcaption>{props.caption}</figcaption>
+            </figure>
+        </div>
+    )
+}
+
 export const ProjectText = (props) => {
     return(
         <div className="projectInfo">

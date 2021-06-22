@@ -26,6 +26,7 @@ function App() {
                     <Route path="/take-back-your-phone" exact component={projects.ProjectThree} />
                     <Route path="/difd-kiosk" exact component={projects.ProjectFour} />
                     <Route path="/senior-exhibition" exact component={projects.ProjectFive} />
+                    <Route path="/other-projects" exact component={projects.ProjectSix} />
 
                     {/*Not Found*/}
                     <Route component = {NotFound} />
@@ -41,18 +42,25 @@ const NotFound = () => {
         <div className = "container 404">
             <section className = "panel notfound">
                 <h1>404</h1>
-                <p>This website is still under construction. Check back soon!</p>
+                <p>Looks like you're a little lost, but that's ok.</p>
                 {/* eslint-disable-next-line */}
-                <p><Link to="/">Go back</Link></p>
+                <p><Link to="/">Let's go back</Link></p>
             </section>
         </div>
     )
 }
 
 const Copyright = () => {
+    const currentYear = new Date().getFullYear();
+    if(currentYear === 2021) {
+        return(
+            <p id="copyright">&copy; 2021 David Gjertsen </p>
+        )
+    }
     return(
-        <p id="copyright">&copy; {new Date().getFullYear()} David Gjertsen </p>
+        <p id="copyright">&copy; 2021 - {currentYear} David Gjertsen </p>
     )
+
 }
 
 export default App;

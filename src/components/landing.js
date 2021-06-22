@@ -65,12 +65,12 @@ export const LandingPage = () => {
                 title="2021 Senior Design&nbsp;Exhibition"
                 text="The most epic Winthrop University Senior Design Exhibition in history."
                 href="/senior-exhibition"/>
-            {/*<Project
+            <Project
                 image="images/landing/project-five.png"
-                alt="The login page for the helpdesk"
-                title="The Company Helpdesk"
-                text="Designed to help you find what you need."
-                href="/helpdesk"/> */}
+                alt="Placeholder"
+                title="Other Projects"
+                text="A gallery of my smaller projects and experiments."
+                href="/other-projects"/>
             <Footer />
         </div>
     )
@@ -115,7 +115,7 @@ const Project = (props) => {
                 <div className="panelText fadeIn">
                     <h2>{props.title}</h2>
                     <p>{props.text}</p>
-                    <Link to={props.href}>View&nbsp;project</Link>
+                    <Link to={props.href}>View&nbsp;project{props.title === "Other Projects" ? "s" : ""}</Link>
                 </div>
             </div>
         </section>

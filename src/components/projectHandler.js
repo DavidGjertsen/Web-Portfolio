@@ -1,4 +1,4 @@
-import {ProjectHeader, ProjectDescription, ProjectImage, ProjectText, ProjectFin, CMProjectLink, ExhibitionLink} from "./projectComponents.js";
+import {ProjectHeader, ProjectDescription, ProjectImage, ProjectImageWithCaption, ProjectText, ProjectFin, CMProjectLink, ExhibitionLink} from "./projectComponents.js";
 
 //It's Time
 export const ProjectOne = () => {
@@ -221,8 +221,7 @@ export const ProjectFour = () => {
             <ProjectDescription
                 color={color}
                 text={[
-                    "This project is my favorite. It is the perfect combination of my skill as a designer, my abilities as an artist, and my experience as a programmer.",
-                    "Pixel art is just plain cool."
+                    "This project is one of my favorites. It's the perfect combination of my skill as a designer, my abilities as an artist, and my experience as a programmer."
                 ]}
             />
             <ProjectFin />
@@ -251,13 +250,75 @@ export const ProjectFive = () => {
                 ]}
             />
             <section className={"panel projectPanel " + color}>
-            <ProjectImage
-                src="images/projects/exhibition/exhibition.gif"
-                alt="The famed countdown to May 3rd"
-            />
+                <ProjectImage
+                    src="images/projects/exhibition/exhibition.gif"
+                    alt="The famed countdown to May 3rd"
+                />
             </section>
             <ExhibitionLink
                 color={color}
+            />
+            <ProjectFin />
+        </div>
+
+    )
+}
+
+export const ProjectSix = () => {
+    const skills = ["Design", "Creative Direction", "Experimentation"];
+    const color = "coffee";
+
+    return(
+        <div className = "container">
+            <ProjectHeader
+                color={color + " projectSix"}
+                title="Other Projects"
+                intro="A collection of smaller projects and experiments."
+                skills={skills}
+            />
+            <ProjectDescription
+                color={color}
+                text={[
+                    "I'm a very creative person, so I've created a lot of projects and experiments ranging from digital and physical design work to illustration and artwork. Most of these aren't large enough to justify their own page, so I've collected some of them here in this gallery."
+                ]}
+            />
+            <section className={"panel projectPanel " + color}>
+                <ProjectImageWithCaption
+                    src="images/projects/otherProjects/Google.jpg"
+                    alt="A neumorphic redesign of the Google homepage"
+                    caption="The Google homepage is classic. For this experimental redesign, I kept the layout similar while incorporating neumorphic design elements."
+                />
+                <ProjectImageWithCaption
+                    src="images/projects/otherProjects/cooling_towers.jpg"
+                    alt="A painting of a nighttime scene. Some sci-fi cooling towers are visible in the distance."
+                    caption="A digital painting inspired by the works of Simon Stålenhag. Something about atmospheric landscapes with futuristic megastructures in the distance is just lovely."
+                />
+                <ProjectImageWithCaption
+                    src="images/projects/otherProjects/blobOS.jpg"
+                    alt="A fake computer desktop"
+                    caption="An early concept I came up with for the 2021 Winthrop Senior Design Exhibition. The idea of a fake desktop quickly got scrapped, but some elements made their way into later versions of the design."
+                />
+                <ProjectImageWithCaption
+                    src="images/projects/otherProjects/stickers.jpg"
+                    alt="Some funny programming stickers on the back of a laptop, featuring such jokes as 'error: coffee not found'"
+                    caption="These are some programming-related stickers I designed and mocked up. The font is Caffeine Mono."
+                />
+                <ProjectImageWithCaption
+                    src="images/projects/otherProjects/bumblebee.jpg"
+                    alt="A code editor with pastel yellow and black coloration"
+                    caption="I created the design for Bumblebee while experimenting with Electron. It's heavily inspired by Atom, my go-to code editor, but with some nice new features and a cheerfully pastel color scheme."
+                />
+                <ProjectImageWithCaption
+                    src="images/projects/otherProjects/Posters.png"
+                    alt="Travel posters for Canada and Argentina"
+                    caption="One thing I love to do while travelling is trying new and unique foods. I channelled that into this pair of travel posters, featuring Canadian lobster rolls and Argentinian provoleta."
+                />
+            </section>
+            <ProjectDescription
+                color={color}
+                text={[
+                    "Be sure to check back, because I will probably be adding more work soon. I'm always experimenting with something or other."
+                ]}
             />
             <ProjectFin />
         </div>
