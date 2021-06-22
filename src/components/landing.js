@@ -66,8 +66,8 @@ export const LandingPage = () => {
                 text="The most epic Winthrop University Senior Design Exhibition in history."
                 href="/senior-exhibition"/>
             <Project
-                image="images/landing/project-five.png"
-                alt="Placeholder"
+                image="images/landing/project-six.png"
+                alt="A pair of food-themed travel posters"
                 title="Other Projects"
                 text="A gallery of my smaller projects and experiments."
                 href="/other-projects"/>
@@ -96,7 +96,7 @@ const PageHeader = () => {
             <div className="pageHeaderContent">
                 <h1>David Gjertsen</h1>
                 <p>I'm a front-end web designer and developer.</p>
-                <p>I make stuff that looks good and works well.</p>
+                <p>I make things that look good and work well.</p>
                 <img
                     id="scrollPrompt"
                     src="images/icons/arrow-down.svg"
