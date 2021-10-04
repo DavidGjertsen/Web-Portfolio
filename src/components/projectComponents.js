@@ -64,7 +64,7 @@ export const ExhibitionLink = (props) => {
         <section className={"panel projectDescription " + props.color}>
             <div className="projectDescriptionContent">
                 <p>The 2021 senior exhibition can be found <a href="https://winthropseniorshow.com/" target="_blank" rel="noreferrer">here</a>. I think it speaks for itself.</p>
-                <p>The website was designed and built by myself, <a href="https://www.danimalphrus.com/" target="_blank" rel="noreferrer">Danielle Malphrus</a>, and <a href="https://jaiquezwork.webflow.io/" target="_blank" rel="noreferrer">Jaiquez Hagood</a>.</p>
+                <p>The website was designed and built by myself, <a href="https://www.danimalphrus.com/" target="_blank" rel="noreferrer">Danielle Malphrus</a>, and <a href="https://www.jaiquezwork.com/" target="_blank" rel="noreferrer">Jaiquez Hagood</a>.</p>
             </div>
         </section>
     )
