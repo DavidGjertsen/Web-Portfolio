@@ -39,7 +39,7 @@ export const NavigationMenu = () => {
                 <ul className="subNav">
                     <li><NavLink className="navLink" to="/its-time" activeClassName="selected">It's Time</NavLink></li>
                     <li><NavLink className="navLink" to="/caffeine-mono" activeClassName="selected">Caffeine Mono</NavLink></li>
-                    <li><NavLink className="navLink" to="/take-back-your-phone" activeClassName="selected">Take Back Your Phone</NavLink></li>
+                    <li><NavLink className="navLink" to="/the-company-helpdesk" activeClassName="selected">The Company Helpdesk</NavLink></li>
                     <li><NavLink className="navLink" to="/difd-kiosk" activeClassName="selected">DIFD Kiosk</NavLink></li>
                     <li><NavLink className="navLink" to="/senior-exhibition" activeClassName="selected">2021 Senior Design&nbsp;Exhibition</NavLink></li>
                     <li><NavLink className="navLink" to="/other-projects" activeClassName="selected">Other Projects</NavLink></li>

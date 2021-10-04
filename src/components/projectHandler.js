@@ -2,7 +2,7 @@ import {ProjectHeader, ProjectDescription, ProjectImage, ProjectImageWithCaption
 
 //It's Time
 export const ProjectOne = () => {
-    const skills = ["Mobile Design & Development", "UX Design", "MySQL"];
+    const skills = ["Mobile Design", "Mobile Development", "UI / UX"];
     const color = "teal";
 
     return(
@@ -129,46 +129,103 @@ export const ProjectTwo = () => {
 
 //Take Back Your Phone
 export const ProjectThree = () => {
-    const skills = ["Mobile Design", "Marketing", "Concepting"];
+    const skills = ["Application Design", "Prototyping", "Teamwork"];
     const color = "teal";
 
     return(
         <div className = "container">
             <ProjectHeader
                 color={color + " projectThree"}
-                title="Take Back Your&nbsp;Phone"
-                intro="Hate spam callers? Here's a call filtering app with a vengeful twist."
+                title="The Company Helpdesk"
+                intro="A solution developed from start to finish."
                 skills={skills}
             />
             <ProjectDescription
                 color={color}
                 text={[
-                    "I hate spam calls. ",
-                    "Did you know that in 2018 there were 47.8 billion spam calls in the United States? That's 90 irritating and pointless spam calls every minute!",
-                    "Take Back Your Phone is a call filtering app concept that would allow the average Joe to get revenge on spam callers. How? By rerouting spam calls to other spammers and giving them a taste of their own medicine. It's about time we took back our phones."
+                    "This project was designed and developed as part of the Spring 2021 Digital Information Design Capstone project at Winthrop University. The request was to design a helpdesk for a real-world company that was recieving far too many internal support tickets.",
+                    "For this project I served as the front-end designer and developer. Most of my contributions involved the creation of a rough wireframe and an accurate mockup of the design.",
+                    "All branding assets related to the client have been removed at their request."
                 ]}
             />
             <section className={"panel projectPanel " + color}>
                 <ProjectImage
-                    src="images/projects/tbyp/callers.png"
-                    alt="A phone with a regular caller and a phone with a spam caller"
+                    src="images/projects/helpdesk/wireframe_landing.png"
+                    alt="A rough wireframe of the landing page for the helpdesk, featuring a searchbar and a selection of categories"
+                />
+                <ProjectImage
+                    src="images/projects/helpdesk/wireframe_article.png"
+                    alt="A rough wireframe of an article page for the helpdesk"
+                />
+                <ProjectImage
+                    src="images/projects/helpdesk/wireframe_form.png"
+                    alt="A rough wireframe of the ticket submission form for the helpdesk"
+                />
+                <ProjectImage
+                    src="images/projects/helpdesk/wireframe_dashboard.png"
+                    alt="A rough wireframe of the ticket dashboard for the helpdesk"
                 />
                 <ProjectText
                     text={[
-                        "Take Back Your Phone takes over when you recieve a call, does some magical checking in the background, and gives you a heads up if it thinks a call might be spam, which is where the fun begins.",
-                        "When a spam call is detected, all you have to do is press the big red \"Vengeance\" button, and listen to the fireworks while the spam caller is rerouted to another spammer elsewhere.",
+                        "The project began with a set of wireframes to rough out the idea. After some research, our team quickly decided to build a self-service system. The Helpdesk presents the user with a set of articles containing solutions to problems commonly encountered by the client's employees, thus reducing the number of tickets submitted for trivial issues.",
+                        "In case a user found their issue was not present, a ticket submission form and a dashboard for managing tickets was also added."
+                    ]}
+                />
+                <ProjectText
+                    text={[
+                        "As I worked to design a more accurate mockup of the design, I took heed of the client's feedback and the results of our usability tests on the wireframe.",
                     ]}
                 />
                 <ProjectImage
-                    src="images/projects/tbyp/slam.png"
-                    alt="A spammer getting slammed on the left, and the app settings on the right."
+                    src="images/projects/helpdesk/mockup_landing.png"
+                    alt="A mockup of the landing page for the helpdesk, featuring a searchbar and a selection of categories"
+                />
+                <ProjectImage
+                    src="images/projects/helpdesk/mockup_solution.png"
+                    alt="A mockup of an article page for the helpdesk"
+                />
+                <ProjectImage
+                    src="images/projects/helpdesk/mockup_dashboard.png"
+                    alt="A mockup of the updated dashboard for the helpdesk"
+                />
+                <ProjectImage
+                    src="images/projects/helpdesk/mockup_ticket.png"
+                    alt="A mockup of the ticket communication system for the helpdesk"
+                />
+                <ProjectText
+                    text={[
+                        "The mockup mostly stayed true to the wireframe layout, with small adjustments here and there. I established a design language that combined the client's branding guide with examples of helpdesks that the team found during our initial research. The result was a clean and cohesive design across every page of the helpdesk.",
+                        "The largest change in the mockup compared to the wireframe was the layout of the ticket dashboard. Based on feedback from the client, the layout was changed from a card format to a list format. A separate ticket information page was added, complete with an SMS-style messaging system to facilitate communication between IT and the user.",
+                    ]}
+                />
+                <ProjectText
+                    text={[
+                        "The mockup was swiftly approved by the client, and development on the finalized version was started shortly after.",
+                    ]}
+                />
+                <ProjectImage
+                    src="images/projects/helpdesk/final_landing.png"
+                    alt="The final version of the helpdesk landing page"
+                />
+                <ProjectImage
+                    src="images/projects/helpdesk/final_form.png"
+                    alt="The final version of the helpdesk ticket submission form"
+                />
+                <ProjectImage
+                    src="images/projects/helpdesk/final_branding.png"
+                    alt="The design language, including colors and icons, developed for the finalized version"
+                />
+                <ProjectText
+                    text={[
+                        "The final project was built using React. SASS was used to style the front-end, and Node.js was used as a back-end. I completed the vast majority of the front-end styling, and built many React components for the back-end developers to use.",
+                        "As a finishing touch, I designed new icons to use across the site, most notably on the landing page. These icons better fit the client's design language."
+                    ]}
                 />
             </section>
             <ProjectDescription
                 color={color}
                 text={[
-                    "Revenge is sweet.",
-                    "This is by far my most popular project, and everyone I've ever talked to about it wishes it were real (though no one more than I!). Perhaps someday..."
+                    "My contributions to this project earned me recognition for excellence, service, and leadership in Digital Information Design, and also my degree. Not to shabby, if I do say so myself.",
                 ]}
             />
             <ProjectFin />
@@ -313,11 +370,16 @@ export const ProjectSix = () => {
                     alt="Travel posters for Canada and Argentina"
                     caption="One thing I love to do while travelling is trying new and unique foods. I channelled that into this pair of travel posters, featuring Canadian lobster rolls and Argentinian provoleta."
                 />
+                <ProjectImageWithCaption
+                    src="images/projects/otherProjects/badbotlogos.png"
+                    alt="A set of three logos designed for Bad Bot"
+                    caption="Three variations on a logo design. Commissioned by Bad Bot Corp, a VRChat community."
+                />
             </section>
             <ProjectDescription
                 color={color}
                 text={[
-                    "Be sure to check back, because I will probably be adding more work soon. I'm always experimenting with something or other."
+                    "Be sure to check back, because I will probably be adding more work soon. I'm always experimenting with something."
                 ]}
             />
             <ProjectFin />

@@ -43,16 +43,16 @@ export const LandingPage = () => {
                 href="/its-time"/>
             <Project
                 image="images/landing/project-two.png"
-                alt="React code written with Caffeine Mono."
+                alt="React.js code written with Caffeine Mono."
                 title="Caffeine Mono"
                 text="An aesthetically pleasing and fully functional programming typeface."
                 href="/caffeine-mono"/>
             <Project
                 image="images/landing/project-three.png"
-                alt="Phones showing the Take Back Your Phone app."
-                title="Take Back Your&nbsp;Phone"
-                text="Hate spam callers? Here's a call filtering app with a vengeful twist."
-                href="/take-back-your-phone"/>
+                alt="A example discussion about a ticket on the Helpdesk"
+                title="The Company Helpdesk"
+                text="A self-service helpdesk solution for a client buried in tickets."
+                href="/the-company-helpdesk"/>
             <Project
                 image="images/landing/project-four.png"
                 alt="A screen from the Digital Information Design kiosk."
@@ -69,7 +69,7 @@ export const LandingPage = () => {
                 image="images/landing/project-six.png"
                 alt="A pair of food-themed travel posters"
                 title="Other Projects"
-                text="A gallery of my smaller projects and experiments."
+                text="A gallery of smaller projects, artwork, and experiments."
                 href="/other-projects"/>
             <Footer />
         </div>
@@ -95,8 +95,8 @@ const PageHeader = () => {
         <section className="panel header">
             <div className="pageHeaderContent">
                 <h1>David Gjertsen</h1>
-                <p>I'm a front-end web designer and developer.</p>
-                <p>I make things that look good and work well.</p>
+                <p>I'm a front-end designer and digital artist.</p>
+                <p>I make things that look good.</p>
                 <img
                     id="scrollPrompt"
                     src="images/icons/arrow-down.svg"

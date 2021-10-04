@@ -453,14 +453,14 @@ a:hover {
   }
 }
 .container .panel.projectHeader.projectThree {
-  background: linear-gradient(90deg, #63dacc 0%, rgba(99, 218, 204, 0.9) 35%, rgba(99, 218, 204, 0.3) 100%), url("../images/takebackyourphone.png");
+  background: linear-gradient(90deg, #63dacc 0%, rgba(99, 218, 204, 0.9) 35%, rgba(99, 218, 204, 0.3) 100%), url("../images/helpdesk.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 800px) {
   .container .panel.projectHeader.projectThree {
-    background: linear-gradient(0deg, #63dacc 0%, rgba(99, 218, 204, 0.9) 35%, rgba(99, 218, 204, 0.3) 100%), url("../images/takebackyourphone.png");
+    background: linear-gradient(0deg, #63dacc 0%, rgba(99, 218, 204, 0.9) 35%, rgba(99, 218, 204, 0.3) 100%), url("../images/helpdesk.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

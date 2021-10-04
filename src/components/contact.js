@@ -7,7 +7,8 @@ export const Contacts = () => {
                 <section className="contactPage">
                     <div className="contacts">
                         <Contact type="Email" link="mailto:davidgjertsen8635@gmail.com" text="davidgjertsen8635@gmail.com"/>
-                        <Contact type="Twitter" link="https://twitter.com/david_gjertsen" external text="@david_gjertsen" />
+                        <Contact type="Professional Twitter" link="https://twitter.com/david_gjertsen" external text="@david_gjertsen" />
+                        <Contact type="Artsy Twitter" link="https://twitter.com/EspressoTheWolf" external text="@EspressoTheWolf" />
                         <Contact type="LinkedIn" link="https://www.linkedin.com/in/david-gjertsen-795072198/" external text="View Profile" />
                         <Contact type="Phone" link="tel:(704)352-8053" text="704-352-8053" />
 

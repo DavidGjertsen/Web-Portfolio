@@ -23,7 +23,7 @@ function App() {
                     {/*Project Pages*/}
                     <Route path="/its-time" exact component={projects.ProjectOne} />
                     <Route path="/caffeine-mono" exact component={projects.ProjectTwo} />
-                    <Route path="/take-back-your-phone" exact component={projects.ProjectThree} />
+                    <Route path="/the-company-helpdesk" exact component={projects.ProjectThree} />
                     <Route path="/difd-kiosk" exact component={projects.ProjectFour} />
                     <Route path="/senior-exhibition" exact component={projects.ProjectFive} />
                     <Route path="/other-projects" exact component={projects.ProjectSix} />
